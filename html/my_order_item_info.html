@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 주문내역조회</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header04">
+            <h1 class="h_title">브리지테일</h1>
+            <a href="my_main_resister.html" class="btn_goback h_btn_icon"><img src="/images/icon-goback.svg" alt="뒤로가기" class="icon"></a>
+            <button class="btn_linkstyle h_btn_icon h_btn_right btn_right"><img src="/images/icon-call.svg" alt="전화걸기" class="icon" onclick="openPopup('telServiceCenter')"></button>
+            <button class="btn_linkstyle h_btn_icon h_btn_right" onclick="openPopup('delOrderHistory')"><img src="/images/icon-trash-header.svg" alt="주문내역 삭제" class="icon"></button>
+        </header>
+
+        <div class="main">
+            <div class="pd_header04"></div>
+            <div class="top_order_number_box">
+                <div class="order_number">
+                    주문번호
+                    <span class="number">2019101012345689-12345678</span>
+                </div>
+                <div class="copy_order_number">
+                    <button type="button" onclick="showToast('toast01')" class="btn_copy_order_number btn_linkstyle btn_linkstyle_main">복 사</button>
+                </div>
+            </div>
+            <div class="order_item_info_container">
+                <div class="thum_box"><img src="http://placehold.it/104x104" alt="상품썸네일" class="img"></div>
+                <div class="order_item_txt_box">
+                    <div class="order_item_title">피토세라 리프레시 세트 눈물 세정제 외 2건</div>
+                    <div class="order_item_price">39,900</div>
+                    <div class="order_item_delivery_number">CJ대한통운 123456789123</div>
+                </div>
+            </div>
+            <div class="order_history_container">
+                <div class="tab_nav02">
+                    <a href="my_order_delivery_check.html" class="tab_nav_link"><span>배송상태</span></a>
+                    <a href="my_order_item_info.html" class="tab_nav_link active"><span>상품정보</span></a>
+                </div>
+                <ul class="item_list05">
+                    <li class="item_box">
+                        <a href="go_store.html" class="item_link">
+                            <div class="item_thum"><img src="http://placehold.it/64x64" alt="상품이미지" class="img"></div>
+                            <div class="item_txt_box">
+                                <div class="item_name">상품명</div>
+                                <div class="item_price">10,000</div>
+                            </div>
+                            <div class="btn_more">
+                                <img src="/images/icon-angle-right-gray.svg" alt=">" class="img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html" class="item_link">
+                            <div class="item_thum"><img src="http://placehold.it/64x64" alt="상품이미지" class="img"></div>
+                            <div class="item_txt_box">
+                                <div class="item_name">피토세라 리프레시 세트 눈물 세정제</div>
+                                <div class="item_price">19,900</div>
+                            </div>
+                            <div class="btn_more">
+                                <img src="/images/icon-angle-right-gray.svg" alt=">" class="img">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html" class="item_link">
+                            <div class="item_thum"><img src="http://placehold.it/64x64" alt="상품이미지" class="img"></div>
+                            <div class="item_txt_box">
+                                <div class="item_name">피토세라 리프레시 세트 눈물 세정제피토세라 리프레시 세트 눈물 세정제피토세라 리프레시 세트 눈물 세정제</div>
+                                <div class="item_price">10,000</div>
+                            </div>
+                            <div class="btn_more">
+                                <img src="/images/icon-angle-right-gray.svg" alt=">" class="img">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- main_end -->
+        </div>
+        
+        <div class="toast_box" id="toast01">
+            <div>
+                주문번호가 복사되었습니다.<br>붙여넣기해서 사용하세요.
+            </div>
+        </div>
+
+        <div class="popup_wrap">
+            <div class="popup_container popup_center" id="delOrderHistory">
+                <div class="popup_txt_box">
+                    <div class="popup_txt_main txt_center">주문내역 삭제</div>
+                    <div class="popup_txt_sub txt_center">주문내역을 삭제하면 다시 복구할 수 없어요. 정말로 삭제하시겠어요?</div>
+                </div>
+                <div class="popup_btn_box02">
+                    <button class="btn btn_half_popup btn_normal_line" onclick="closePopup('delOrderHistory')">취소</button>
+                    <button class="btn btn_half_popup btn_main btn_right" onclick="location.href='my_orderhistory_list.html'">삭 제</button>
+                </div>
+            </div>
+            <div class="popup_container popup_center" id="telServiceCenter">
+                <div class="popup_txt_box">
+                    <div class="popup_txt_main txt_center">브리지테일 고객센터</div>
+                    <div class="popup_txt_sub txt_center">업무시간이 아닐 경우 수신되지 않을 수 있습니다</div>
+                </div>
+                <div class="popup_btn_box02">
+                    <button class="btn btn_half_popup btn_normal_line" onclick="closePopup('telServiceCenter')">취소</button>
+                    <button class="btn btn_half_popup btn_main btn_right">연결</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var SHOW ='show';
+        var removeToast;
+
+        function showToast(id){
+            var elToast = document.getElementById(id);
+
+            if(elToast.classList.contains(SHOW)){
+                clearTimeout(removeToast), removeToast = setTimeout(function () {
+                    document.getElementById(id).classList.remove(SHOW);
+                }, 1000)
+            } else {
+                removeToast = setTimeout(function () {
+                    document.getElementById(id).classList.remove(SHOW);
+                }, 2000);
+            }
+
+            elToast.classList.add(SHOW);
+            document.querySelectorAll('button').forEach(function(el){
+                el.blur();
+            });
+        }
+        var elPopupWrap = document.querySelector('.popup_wrap');
+        var SHOW = 'show';
+
+        function openPopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.add(SHOW);
+            elPopupContainer.classList.add(SHOW);
+        }
+        function closePopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.remove(SHOW);
+            elPopupContainer.classList.remove(SHOW);
+        }
+    </script>
+</body>
+</html>

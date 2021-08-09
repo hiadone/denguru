@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DENGURU</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="pd_header01"></div>
+        <header class="header01">
+            <h1 class="h_logo_box"><a href="index.html" class="h_link"><img src="/images/logo-horizontal.svg" alt="DENGURU 로고" class="h_logo"></a></h1>
+            <div class="h_search_box">
+                <a href="search.html">
+                    <div class="icon_box"><img src="/images/icon-search.svg" alt="검색" class="icon"></div>
+                    <div class="search_txt">추천검색어</div>
+                </a>
+            </div>
+            <div class="h_btn">
+                <!-- <span class="has_alarm"><span class="blind">알림이 있습니다</span></span> -->
+                <a href="my_notification.html"><img src="/images/icon-bell-with-dot.svg" alt="알림" class="icon"></a>
+            </div>
+        </header>
+        <nav class="gnb_bottom">
+            <h2 class="blind">하단 네비게이션</h2>
+            <ul class="gnb_list">
+                <li class="gnb_item">
+                    <a href="store_rank.html" class="gnb_link">
+                        <img src="/images/gnb-store.svg" alt="store" class="gnb_icon">
+                        <span class="gnb_txt blind">store</span>
+                    </a>
+                </li>
+                <li class="gnb_item">
+                    <a href="category_main.html" class="gnb_link">
+                        <img src="/images/gnb-category.svg" alt="category" class="gnb_icon">
+                        <span class="gnb_txt blind">category</span>
+                    </a>
+                </li>
+                <li class="gnb_item active">
+                    <a href="index.html" class="gnb_link">
+                        <img src="/images/gnb-home-active.svg" alt="home" class="gnb_icon">
+                        <span class="gnb_txt blind">home</span>
+                    </a>
+                </li>
+                <li class="gnb_item">
+                    <a href="pick_main.html" class="gnb_link">
+                        <img src="/images/gnb-pick.svg" alt="pick" class="gnb_icon">
+                        <span class="gnb_txt blind">pick</span>
+                    </a>
+                </li>
+                <li class="gnb_item">
+                    <a href="my_main_resister.html" class="gnb_link">
+                        <img src="/images/gnb-my.svg" alt="my" class="gnb_icon">
+                        <span class="gnb_txt blind">my</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <!-- main_profile -->
+            <section class="main_profile swiper-container">
+                <h2 class="blind">마이펫 프로필</h2>
+                <ul class="profile_list swiper-wrapper">
+                    <li class="profile swiper-slide">
+                        <div class="profile_img"><img src="/images/profile-img.jpg" alt="레오 사진" class="img"></div>
+                        <div class="profile_name">레오</div>
+                        <ul class="profile_tag_list">
+                            <li class="profile_tag">남아</li>
+                            <li class="profile_tag">생후53개월</li>
+                            <li class="profile_tag">어덜트</li>
+                            <li class="profile_tag">초소형</li>
+                            <li class="profile_tag">포메라니안</li>
+                        </ul>
+                        <a href="home_resister_pet_edit.html" class="btn_modify_pet"><img src="/images/btn_setting.png" alt="레오 정보 수정하기" class="img"></a>
+                    </li>
+                    <li class="profile swiper-slide">
+                        <div class="profile_img"><img src="/images/profile-img2.jpg" alt="요미 사진" class="img"></div>
+                        <div class="profile_name">요미</div>
+                        <ul class="profile_tag_list">
+                            <li class="profile_tag">남아</li>
+                            <li class="profile_tag">생후3개월</li>
+                            <li class="profile_tag">퍼피</li>
+                            <li class="profile_tag">소형</li>
+                            <li class="profile_tag">닥스훈트</li>
+                        </ul>
+                        <a href="home_resister_pet_edit.html" class="btn_modify_pet"><img src="/images/btn_setting.png" alt="레오 정보 수정하기" class="img"></a>
+                    </li>
+                    <li class="profile swiper-slide">
+                        <div class="profile_img"><img src="/images/profile-img3.jpg" alt="쫄랑이 사진" class="img"></div>
+                        <div class="profile_name">쫄랑이</div>
+                        <ul class="profile_tag_list">
+                            <li class="profile_tag">여아</li>
+                            <li class="profile_tag">생후24개월</li>
+                            <li class="profile_tag">어덜트</li>
+                            <li class="profile_tag">중형견</li>
+                            <li class="profile_tag">시바견</li>
+                        </ul>
+                        <a href="home_resister_pet_edit.html" class="btn_modify_pet"><img src="/images/btn_setting.png" alt="레오 정보 수정하기" class="img"></a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination pagination_main"></div>
+                <a href="home_resister_pet.html" class="btn_add">
+                    추가 <img src="/images/btn_plus.png" alt="+" class="icon">
+                </a>
+            </section>
+            <!-- 댕구루 AI 추천 -->
+            <section class="sect02 sect_recommand_ai">
+                <h2 class="title01"><img src="/images/logo-icon.svg" alt="로고아이콘" class="logo_icon"> 댕구루 AI 추천</h2>
+                <div class="sub_title01">
+                    <span class="emph01">레오</span> 맞춤 제품을 추천해요.<br>
+                    <span class="emph02">포메라니안 80%</span>가 관심있는 제품입니다.
+                </div>
+                <div class="list_info_bar01">
+                    <div class="list_num"><span class="num">123</span> items</div>
+                    <select name="listSort" id="listSort" class="list_order">
+                        <option value="">추천순</option>
+                        <option value="">ㅇㅇ순</option>
+                    </select>
+                </div>
+                <div class="items_wrap swiper-container">
+                    <div class="itmes_container swiper-wrapper">
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">38,000 <span class="rate_discount">5%</span></div>
+                                        <div class="item_price_before">40,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">96,000 <span class="rate_discount">20%</span></div>
+                                        <div class="item_price_before">120,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">38,000</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200 <span class="rate_discount">16%</span></div>
+                                        <div class="item_price_before">30,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                        <div class="item_price_before">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">94,000 <span class="rate_discount">6%</span></div>
+                                        <div class="item_price_before">100,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">36,000 <span class="rate_discount">20%</span></div>
+                                        <div class="item_price_before">45,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200 <span class="rate_discount">16%</span></div>
+                                        <div class="item_price_before">30,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                        <div class="item_price_before">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">94,000</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">38,000</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">94,000</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">37,800 <span class="rate_discount">10%</span></div>
+                                        <div class="item_price_before">42,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200 <span class="rate_discount">16%</span></div>
+                                        <div class="item_price_before">30,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                        <div class="item_price_before">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">96,000 <span class="rate_discount">20%</span></div>
+                                        <div class="item_price_before">120,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-pagination pagination_main"></div>
+                </div>
+            </section>
+            <!-- 오늘의 BEST ITEMS -->
+            <section class="sect01">
+                <h2 class="title01">오늘의 BEST ITEMS</h2>
+                <div class="items_wrap">
+                    <ul class="item_list02">
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">리치독</div>
+                                    <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                    <div class="item_price">38,000</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">이츠독</div>
+                                    <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                    <div class="item_price">25,200</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">어썸키즈</div>
+                                    <div class="item_name">폴라올인원(pink)</div>
+                                    <div class="item_price">14,400  <span class="rate_discount">28%</span> <span class="item_price_before">20,000</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">퍼피엔젤</div>
+                                    <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                    <div class="item_price">94,000</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">펫츠앤미</div>
+                                    <div class="item_name">견생방석 30% sale</div>
+                                    <div class="item_price">54,400 <span class="rate_discount">15%</span> <span class="item_price_before">64,000</span></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_box_bottom">
+                        <a href="home_best.html" class="btn_more">더보기 <img src="/images/icon-angle-right.svg" alt=">" class="icon"></a>
+                    </div>
+                </div>
+            </section>
+            <!-- 광고 -->
+            <section class="sect_ad01">
+                <h2 class="blind">광고영역</h2>
+                <a href=""><img src="/images/bnr_01.png" alt="영양제 최대 특가전" class="bnr"></a>
+            </section>
+            <!-- 지금 뜨는 인기 ITEMS -->
+            <section class="sect02 sect_hot_items">
+                <h2 class="title01">지금 뜨는 인기 ITEMS</h2>
+                <div class="hash_list_container swiper-container">
+                    <h3 class="blind">인기 검색어</h3>
+                    <ul class="item_list04 swiper-wrapper">
+                        <li class="item_box swiper-slide">
+                            <a href="search_result.html">
+                                <div class="item_thum"><img src="http://placehold.it/100x100" alt="#관절영양제" class="img"></div>
+                                <div class="hash">#관절영양제</div>
+                            </a>
+                        </li>
+                        <li class="item_box swiper-slide">
+                            <a href="search_result.html">
+                                <div class="item_thum"><img src="http://placehold.it/100x100" alt="#하네스" class="img"></div>
+                                <div class="hash">#하네스</div>
+                            </a>
+                        </li>
+                        <li class="item_box swiper-slide">
+                            <a href="search_result.html">
+                                <div class="item_thum"><img src="http://placehold.it/100x100" alt="#후리스맛집" class="img"></div>
+                                <div class="hash">#후리스맛집</div>
+                            </a>
+                        </li>
+                        <li class="item_box swiper-slide">
+                            <a href="search_result.html">
+                                <div class="item_thum"><img src="http://placehold.it/100x100" alt="#관절영양제" class="img"></div>
+                                <div class="hash">#다이어트</div>
+                            </a>
+                        </li>
+                        <li class="item_box swiper-slide">
+                            <a href="search_result.html">
+                                <div class="item_thum"><img src="http://placehold.it/100x100" alt="#하네스" class="img"></div>
+                                <div class="hash">#장난감</div>
+                            </a>
+                        </li>
+                        <li class="item_box swiper-slide">
+                            <a href="search_result.html">
+                                <div class="item_thum"><img src="http://placehold.it/100x100" alt="#후리스맛집" class="img"></div>
+                                <div class="hash">#패딩</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="items_wrap swiper-container">
+                    <div class="itmes_container swiper-wrapper">
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">38,000 <span class="rate_discount">5%</span></div>
+                                        <div class="item_price_before">40,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">96,000 <span class="rate_discount">20%</span></div>
+                                        <div class="item_price_before">120,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">38,000</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200 <span class="rate_discount">16%</span></div>
+                                        <div class="item_price_before">30,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                        <div class="item_price_before">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">94,000 <span class="rate_discount">6%</span></div>
+                                        <div class="item_price_before">100,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">36,000 <span class="rate_discount">20%</span></div>
+                                        <div class="item_price_before">45,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200 <span class="rate_discount">16%</span></div>
+                                        <div class="item_price_before">30,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                        <div class="item_price_before">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">94,000</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">38,000</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">94,000</div>
+                                        <div class="item_price_before"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="item_list01 swiper-slide">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                        <div class="item_price">37,800 <span class="rate_discount">10%</span></div>
+                                        <div class="item_price_before">42,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">이츠독</div>
+                                        <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                        <div class="item_price">25,200 <span class="rate_discount">16%</span></div>
+                                        <div class="item_price_before">30,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">어썸키즈</div>
+                                        <div class="item_name">폴라올인원(pink)</div>
+                                        <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                        <div class="item_price_before">20,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/126x126" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">퍼피엔젤</div>
+                                        <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                        <div class="item_price">96,000 <span class="rate_discount">20%</span></div>
+                                        <div class="item_price_before">120,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-pagination  pagination_main"></div>
+                </div>
+            </section>
+            <!-- oo를 위해 이런건 어때요? -->
+            <section class="sect01 sect_recommand_pet">
+                <h2 class="title01"><img src="/images/logo-icon.svg" alt="로고아이콘" class="logo_icon"> <span class="emph">레오</span>를 위해 이런건 어때요?</h2>
+                <div class="items_wrap">
+                    <ul class="item_list03">
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">리치독</div>
+                                    <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                    <div class="item_price">380,000</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">이츠독</div>
+                                    <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                    <div class="item_price">25,200</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">퍼피아</div>
+                                    <div class="item_name">퍼피아 엑티브 애견 패딩 올인원 하네스 가슴줄 일체형 [무료배송]</div>
+                                    <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                    <div class="item_price_before">20,000</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">퍼피엔젤</div>
+                                    <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                    <div class="item_price">96,000 <span class="rate_discount">20%</span></div>
+                                    <div class="item_price_before">120,000</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">더플래</div>
+                                    <div class="item_name">강아지 노즈워크 UFO볼 4colors</div>
+                                    <div class="item_price">17,000 <span class="rate_discount">15%</span></div>
+                                    <div class="item_price_before">20,000</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item_box">
+                            <a href="home_item_info.html">
+                                <div class="item_thum">
+                                    <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                </div>
+                                <div class="item_txt_box">
+                                    <div class="item_shop">닥터바이</div>
+                                    <div class="item_name">조인트 3개월 강아지 고양이 관절 영양제 특허소재</div>
+                                    <div class="item_price">94,000</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_box_bottom">
+                        <a href="" class="btn_more"><img src="/images/icon-refresh.svg" alt="새로고침" class="icon"> 추천 상품 새로 보기</a>
+                    </div>
+                </div>
+
+            </section>
+            <!-- 광고 -->
+            <section class="sect_ad01">
+                <h2 class="blind">광고영역</h2>
+                <a href=""><img src="/images/bnr_02.png" alt="새해맞이 한복 Sale 진행중" class="bnr"></a>
+            </section>
+            <!-- 리뷰 -->
+            <section class="sect01">
+                <h2 class="title01">REVIEW</h2>
+                <ul class="review_list01">
+                    <li class="review_card">
+                        <div class="review_profile_box">
+                            <a href="home_review_user.html">
+                                <div class="profile_thum"><img src="/images/profile-img.jpg" alt="레오 프로필" class="img"></div>
+                                <div class="profile_txt_box">
+                                    <div class="user_id">ABCD (레오)</div>
+                                    <div class="user_features">
+                                        4살/포메라니안/다이어트·보습·면역력
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="review_item_info_box">
+                            <div class="review_item_name"><a href="home_review_item.html">알파독 건강한 아이 애견 영양제</a></div>
+                            <div class="review_post_info">
+                                <span class="stars">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star-half.svg" alt="별" class="star">
+                                </span>
+                                <span class="post_date">2019-12-03</span>
+                                <a href="" class="link_report">신고하기</a>
+                            </div>
+                        </div>
+                        <div class="review_txt_box">
+                            <div class="review_txt01">
+                                <a href="home_review_item.html">내는 실로 풀밭에 끓는다. 인간의 무엇을 인생에 때문이다. 온갖 귀는 이상을 것이다. 가진 가장 없으면, 들어 노래하며 피고, 과실이 공자는 청춘을 위하여서. 뛰노는 주며, 수 이상의 얼마나 싸인 때문이다. 구하지 봄바람을 그들에게 듣는다. 바이며, 오직 유소년에게서 미인을 있다. </a>
+                            </div>
+                        </div>
+                        <div class="review_img_box">
+                            <a href="home_review_item.html"><img src="http://placehold.it/328x185" alt="리뷰이미지" class="img"></a>
+                        </div>
+                        <div class="btn_box">
+                            <button class="btn btn_mid btn_mid_round btn_normal_line btn_like btn_right"><img src="/images/icon-heart-o.svg" alt="하트" class="icon"><span class="num">11</span></button>
+                        </div>
+                    </li>
+                    <li class="review_card">
+                        <div class="review_profile_box">
+                            <a href="home_review_user.html">
+                                <div class="profile_thum"><img src="/images/profile-img.jpg" alt="레오 프로필" class="img"></div>
+                                <div class="profile_txt_box">
+                                    <div class="user_id">ABCD (레오)</div>
+                                    <div class="user_features">
+                                        4살/포메라니안/다이어트·보습·면역력
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="review_item_info_box">
+                            <div class="review_item_name"><a href="home_review_item.html">알파독 건강한 아이 애견 영양제</a></div>
+                            <div class="review_post_info">
+                                <span class="stars">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star-half.svg" alt="별" class="star">
+                                </span>
+                                <span class="post_date">2019-12-03</span>
+                                <a href="" class="link_report">신고하기</a>
+                            </div>
+                        </div>
+                        <div class="review_txt_box">
+                            <div class="review_txt01">
+                                <a href="home_review_item.html">내는 실로 풀밭에 끓는다. 인간의 무엇을 인생에 때문이다. 온갖 귀는 이상을 것이다. 가진 가장 없으면, 들어 노래하며 피고, 과실이 공자는 청춘을 위하여서. 뛰노는 주며, 수 이상의 얼마나 싸인 때문이다. 구하지 봄바람을 그들에게 듣는다. 바이며, 오직 유소년에게서 미인을 있다. </a>
+                            </div>
+                        </div>
+                        <div class="btn_box">
+                            <button class="btn btn_mid btn_mid_round btn_normal_line btn_like btn_right"><img src="/images/icon-heart-o.svg" alt="하트" class="icon"><span class="num">11</span></button>
+                        </div>
+                    </li>
+                    <li class="review_card">
+                        <div class="review_profile_box">
+                            <a href="home_review_user.html">
+                                <div class="profile_thum"><img src="/images/profile-img.jpg" alt="레오 프로필" class="img"></div>
+                                <div class="profile_txt_box">
+                                    <div class="user_id">ABCD (레오)</div>
+                                    <div class="user_features">
+                                        4살/포메라니안/다이어트·보습·면역력
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="review_item_info_box">
+                            <div class="review_item_name"><a href="home_review_item.html">알파독 건강한 아이 애견 영양제</a></div>
+                            <div class="review_post_info">
+                                <span class="stars">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star-half.svg" alt="별" class="star">
+                                </span>
+                                <span class="post_date">2019-12-03</span>
+                                <a href="" class="link_report">신고하기</a>
+                            </div>
+                        </div>
+                        <div class="review_txt_box">
+                            <!-- <div class="icon_box">
+                                <img src="http://placehold.it/24x24" alt="좋은점" class="review_icon">
+                            </div> -->
+                            <div class="review_txt01">
+                                <a href="home_review_item.html">내는 실로 풀밭에 끓는다. 인간의 무엇을 인생에 때문이다. 온갖 귀는 이상을 것이다. 가진 가장 없으면, 들어 노래하며 피고, 과실이 공자는 청춘을 위하여서. 뛰노는 주며, 수 이상의 얼마나 싸인 때문이다. 구하지 봄바람을 그들에게 듣는다. 바이며, 오직 유소년에게서 미인을 있다. </a>
+                            </div>
+                        </div>
+                        <div class="review_img_box">
+                            <a href="home_review_item.html"><img src="http://placehold.it/328x185" alt="리뷰이미지" class="img"></a>
+                        </div>
+                        <div class="btn_box">
+                            <button class="btn btn_mid btn_mid_round btn_normal_line btn_like btn_right"><img src="/images/icon-heart-o.svg" alt="하트" class="icon"><span class="num">11</span></button>
+                        </div>
+                    </li>
+                    <li class="review_card">
+                        <div class="review_profile_box">
+                            <a href="home_review_user.html">
+                                <div class="profile_thum"><img src="/images/profile-img.jpg" alt="레오 프로필" class="img"></div>
+                                <div class="profile_txt_box">
+                                    <div class="user_id">ABCD (레오)</div>
+                                    <div class="user_features">
+                                        4살/포메라니안/다이어트·보습·면역력
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="review_item_info_box">
+                            <div class="review_item_name"><a href="home_review_item.html">알파독 건강한 아이 애견 영양제</a></div>
+                            <div class="review_post_info">
+                                <span class="stars">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star-half.svg" alt="별" class="star">
+                                </span>
+                                <span class="post_date">2019-12-03</span>
+                                <a href="" class="link_report">신고하기</a>
+                            </div>
+                        </div>
+                        <div class="review_txt_box">
+                            <!-- <div class="icon_box">
+                                <img src="http://placehold.it/24x24" alt="좋은점" class="review_icon">
+                            </div> -->
+                            <div class="review_txt01">
+                                <a href="home_review_item.html">내는 실로 풀밭에 끓는다. 인간의 무엇을 인생에 때문이다. 온갖 귀는 이상을 것이다. 가진 가장 없으면, 들어 노래하며 피고, 과실이 공자는 청춘을 위하여서. 뛰노는 주며, 수 이상의 얼마나 싸인 때문이다. 구하지 봄바람을 그들에게 듣는다. 바이며, 오직 유소년에게서 미인을 있다. </a>
+                            </div>
+                        </div>
+                        <div class="review_img_box">
+                            <a href="home_review_item.html"><img src="http://placehold.it/328x185" alt="리뷰이미지" class="img"></a>
+                        </div>
+                        <div class="btn_box">
+                            <button class="btn btn_mid btn_mid_round btn_normal_line btn_like btn_right"><img src="/images/icon-heart-o.svg" alt="하트" class="icon"><span class="num">11</span></button>
+                        </div>
+                    </li>
+                    <li class="review_card js-review-item">
+                        <div class="review_profile_box">
+                            <a href="home_review_user.html">
+                                <div class="profile_thum"><img src="/images/profile-img.jpg" alt="레오 프로필" class="img"></div>
+                                <div class="profile_txt_box">
+                                    <div class="user_id">ABCD (레오)</div>
+                                    <div class="user_features">
+                                        4살/포메라니안/다이어트·보습·면역력
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="review_item_info_box">
+                            <div class="review_item_name"><a href="home_review_item.html">알파독 건강한 아이 애견 영양제</a></div>
+                            <div class="review_post_info">
+                                <span class="stars">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star.svg" alt="별" class="star">
+                                    <img src="/images/icon-star-half.svg" alt="별" class="star">
+                                </span>
+                                <span class="post_date">2019-12-03</span>
+                                <a href="" class="link_report">신고하기</a>
+                            </div>
+                        </div>
+                        <div class="review_txt_box">
+                            <!-- <div class="icon_box">
+                                <img src="http://placehold.it/24x24" alt="좋은점" class="review_icon">
+                            </div> -->
+                            <div class="review_txt01">
+                                <a href="home_review_item.html">내는 실로 풀밭에 끓는다. 인간의 무엇을 인생에 때문이다. 온갖 귀는 이상을 것이다. 가진 가장 없으면, 들어 노래하며 피고, 과실이 공자는 청춘을 위하여서. 뛰노는 주며, 수 이상의 얼마나 싸인 때문이다. 구하지 봄바람을 그들에게 듣는다. 바이며, 오직 유소년에게서 미인을 있다. </a>
+                            </div>
+                        </div>
+                        <div class="btn_box">
+                            <button class="btn btn_mid btn_mid_round btn_normal_line btn_like btn_right"><img src="/images/icon-heart-o.svg" alt="하트" class="icon"><span class="num">11</span></button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn_box_bottom">
+                    <a href="" class="btn_more js-btn-review-list-more">더보기 <img src="/images/icon-angle-right.svg" alt=">" class="icon"></a>
+                </div>
+            </section>
+            <div class="pd_gnb_bottom" style="height: 24px;background-color: #fff;"></div>
+            <div class="btn_fixed_box">
+                <button type="button" class="btn btn_circle btn_normal_line btn_write btn-top" id="btnTop"><img src="/images/icon-backtop.svg" alt="맨위로" class="icon icon_up"></button>
+            </div>
+            <!-- .main end -->
+        </div>
+
+        <div class="popup_wrap">
+            <div class="popup_container05" id="popupAd">
+                <div class="img_box"><img src="/images/bnr_notification.png" alt="광고배너" class="img"></div>
+                <div class="btn_box">
+                    <button class="btn btn_half_popup btn_normal_line" onclick="closePopup('popupAd')">다시보지 않기</button>
+                    <button class="btn btn_half_popup btn_main btn_right" onclick="closePopup('popupAd')">닫 기</button>
+                </div>
+            </div>            
+        </div>
+        <!-- .wrap end -->
+    </div>
+    <script>
+        function openPopup(id) {
+            $('.popup_wrap').addClass('show');
+            setTimeout(function(){
+                $('#'+ id).addClass('show');
+            },5);
+        }
+        function closePopup(id) {
+            $('#'+ id).removeClass('show');
+            setTimeout(function(){
+                $('.popup_wrap').removeClass('show');
+            },400);
+        }
+        openPopup('popupAd');
+
+        var swiper = new Swiper('.main_profile.swiper-container', {
+          spaceBetween: 0,
+          effect: 'fade',
+          fadeEffect: {
+            crossFade: true
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+
+        var swiper = new Swiper('.sect_recommand_ai .items_wrap, .sect_hot_items .items_wrap', {
+            slidesPerView: 1.25,
+            spaceBetween: 8,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        var swiper = new Swiper('.hash_list_container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+        });
+
+        // 좋아요 버튼
+        var elReviewHeart = document.querySelectorAll('.btn_like');
+
+        var BTN_NORMAL_LINE = 'btn_normal_line';
+        var BTN_MAIN_LINE = 'btn_main_line';
+        var hrefHeart = 'images/icon-heart.svg';
+        var hrefHeartO = 'images/icon-heart-o.svg';
+
+        function changeBtnStyle(el){
+            if(el.classList.contains(BTN_NORMAL_LINE)){
+                el.classList.remove(BTN_NORMAL_LINE);
+                el.classList.add(BTN_MAIN_LINE);
+                el.querySelector('.icon').setAttribute('src',hrefHeart);
+                el.blur();
+            } else if(el.classList.contains(BTN_MAIN_LINE)){
+                el.classList.remove(BTN_MAIN_LINE);
+                el.classList.add(BTN_NORMAL_LINE);
+                el.querySelector('.icon').setAttribute('src',hrefHeartO);
+                el.blur();
+            }
+        }
+
+        elReviewHeart.forEach(function(el){
+            el.addEventListener('click',function(){
+                var elNum = el.querySelector('.num');
+                var numberLike = elNum.textContent;
+
+                if(el.classList.contains(BTN_NORMAL_LINE)){
+                    elNum.textContent = Number(numberLike) + 1;
+                }else if(el.classList.contains(BTN_MAIN_LINE)){
+                    elNum.textContent = Number(numberLike) - 1;
+                }
+                changeBtnStyle(this);
+            });
+        })
+
+        // 단순 보여주기용 - 리뷰섹션에서 더보기 클릭시 5개더 노출 
+        var elReviewItem = document.querySelector('.js-review-item');
+        var elBtnReviewMore = document.querySelector('.js-btn-review-list-more');
+        
+        elBtnReviewMore.addEventListener('click',function(e){
+            e.preventDefault();
+            for (let index = 0; index < 5; index++) {
+                var addItem = elReviewItem.cloneNode(true);
+                var addItemBtn = addItem.querySelector('.btn');
+                elReviewItem.insertAdjacentElement('afterend', addItem);
+                addItem.querySelector('.num').textContent = Number(addItem.querySelector('.num').textContent) + 5 - index;
+
+                if(addItemBtn.classList.contains(BTN_MAIN_LINE)){
+                    addItemBtn.classList.remove(BTN_MAIN_LINE);
+                    addItemBtn.classList.add(BTN_NORMAL_LINE);
+                    addItemBtn.querySelector('.icon').setAttribute('src',hrefHeartO);
+                    addItemBtn.blur();
+                }
+            }
+            this.classList.add('blind');
+            // console.log(addItem);
+        });
+    </script>
+    <script src="js/btn_top.js"></script>
+    <!-- <script src="js/header.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 스토어</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .store_info_container .store_info_tag_size {
+            display: inline-block;
+            color: #616161; 
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            padding: 2px 4px;
+        }
+        .store_info_container .store_info_tag_size + .store_info_tag_category {
+            margin-left: 3px;
+        }
+        .store_info_container .store_info_tag_category {
+            display: inline-block;
+            color: #616161; 
+            /* background-color: #f4f4f4; */
+            /* border-radius: 3px; */
+            padding: 2px 0;
+        }
+        .store_info_container .store_info_tag_breed {
+            color: #0095c6; 
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">STORE</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'store_rank.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+        <div class="main">
+            <section class="store_info_container">
+                <h2 class="blind">스토어 정보</h2>
+                <div class="store_info_box">
+                    <a href="go_store02.html" class="store_thum img_box"><img src="http://placehold.it/64x64" alt="" class="img"></a>
+                    <div class="store_info_txt_box">
+                        <a href="go_store02.html" class="store_name">바잇미</a>
+                        <div class="store_info_tag_box store_info_tag_box01">
+                            <span class="store_info_tag store_info_tag_size">소형견</span>
+                            <span class="store_info_tag store_info_tag_size">중형견</span>
+                            <span class="store_info_tag store_info_tag_category">패션</span>,
+                            <span class="store_info_tag store_info_tag_category">산책용품</span>,
+                            <span class="store_info_tag store_info_tag_category">장난감</span>
+                        </div>
+                        <div class="store_info_tag_box store_info_tag_box02">
+                            <span class="store_info_tag store_info_tag_breed">말티즈, 비숑, 푸들</span>들이 좋아해요
+                        </div>
+                    </div>
+                    <button type="button" class="btn_linkstyle btn_bookmark" id="btnBookmark">
+                        <img src="/images/icon-bookmark.svg" alt="즐겨찾기 추가" class="icon">
+                        <span class="bookmark_num"></span>
+                    </button>
+                </div>
+            </section>
+            <div class="shop_shortcut_box">
+                <a href="go_store02.html" class="btn btn_main btn_big btn_big_round">쇼핑몰 바로가기</a>
+            </div>
+            <div class="store_item_list_container">
+                <div class="store_new_item_info">금주의 신상품 - 2020.03.24 13:20 업데이트</div>
+                <ul class="item_list03">
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                <span class="tag_new"><img src="/images/tag-item-new.svg" alt="신상품" class="img_tag"></span>
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                <div class="item_price">380,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                <span class="tag_new"><img src="/images/tag-item-new.svg" alt="신상품" class="img_tag"></span>
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                <div class="item_price">25,200</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                <span class="tag_new"><img src="/images/tag-item-new.svg" alt="신상품" class="img_tag"></span>
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">퍼피아 엑티브 애견 패딩 올인원 하네스 가슴줄 일체형 [무료배송]</div>
+                                <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                <div class="item_price_before">20,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                <span class="tag_new"><img src="/images/tag-item-new.svg" alt="신상품" class="img_tag"></span>
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                <div class="item_price">96,000 <span class="rate_discount">20%</span></div>
+                                <div class="item_price_before">120,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                                <span class="tag_new"><img src="/images/tag-item-new.svg" alt="신상품" class="img_tag"></span>
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">강아지 노즈워크 UFO볼 4colors</div>
+                                <div class="item_price">17,000 <span class="rate_discount">15%</span></div>
+                                <div class="item_price_before">20,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">조인트 3개월 강아지 고양이 관절 영양제 특허소재</div>
+                                <div class="item_price">94,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                <div class="item_price">380,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                <div class="item_price">25,200</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">퍼피아 엑티브 애견 패딩 올인원 하네스 가슴줄 일체형 [무료배송]</div>
+                                <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                <div class="item_price_before">20,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                <div class="item_price">96,000 <span class="rate_discount">20%</span></div>
+                                <div class="item_price_before">120,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">강아지 노즈워크 UFO볼 4colors</div>
+                                <div class="item_price">17,000 <span class="rate_discount">15%</span></div>
+                                <div class="item_price_before">20,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">조인트 3개월 강아지 고양이 관절 영양제 특허소재</div>
+                                <div class="item_price">94,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">[에덴숑]Button sweat shirt (Bluegreen) : 버튼</div>
+                                <div class="item_price">380,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">테디베어 티셔츠(핑크)</div>
+                                <div class="item_price">25,200</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">퍼피아 엑티브 애견 패딩 올인원 하네스 가슴줄 일체형 [무료배송]</div>
+                                <div class="item_price">14,400 <span class="rate_discount">28%</span></div>
+                                <div class="item_price_before">20,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">[OW443] 고프레 패딩 바디수트 (4컬러, 여아용)</div>
+                                <div class="item_price">96,000 <span class="rate_discount">20%</span></div>
+                                <div class="item_price_before">120,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">강아지 노즈워크 UFO볼 4colors</div>
+                                <div class="item_price">17,000 <span class="rate_discount">15%</span></div>
+                                <div class="item_price_before">20,000</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item_box">
+                        <a href="go_store.html">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/104x104" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_name">조인트 3개월 강아지 고양이 관절 영양제 특허소재</div>
+                                <div class="item_price">94,000</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pd_gnb_bottom"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //addPadding
+        var elStoreInfoContainer = document.querySelector('.store_info_container');
+        var elStoreItemListContainer = document.querySelector('.store_item_list_container');
+
+        function addPadding(){
+            var containerPadding = elStoreInfoContainer.clientHeight + 16;
+
+            elStoreItemListContainer.style.marginTop = containerPadding + 'px';
+        }
+        addPadding();
+        window.addEventListener('resize',function(){
+            addPadding();
+        });
+
+        //
+        var elBtnBookmark = document.getElementById('btnBookmark');
+        var hrefBookmark = 'images/icon-bookmark-active.svg';
+        var hrefBookmarkO = 'images/icon-bookmark.svg';
+        var BTN_ACTIVE = 'btn_active';
+        var numberLike = 123456;
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        elBtnBookmark.querySelector('.bookmark_num').innerHTML = numberWithCommas(numberLike);
+
+        function changeBookmarkStyle(el){
+
+            if(el.classList.contains(BTN_ACTIVE)){
+                el.classList.remove(BTN_ACTIVE);
+                el.querySelector('.icon').setAttribute('src',hrefBookmarkO);
+                el.blur();
+            } else if(!el.classList.contains(BTN_ACTIVE)){
+                el.classList.add(BTN_ACTIVE);
+                el.querySelector('.icon').setAttribute('src',hrefBookmark);
+                el.blur();
+            }
+        }
+        elBtnBookmark.addEventListener('click',function(){
+            var elNum = this.querySelector('.bookmark_num');
+            
+            if(!this.classList.contains(BTN_ACTIVE)){
+                
+                elNum.innerHTML = numberWithCommas(numberLike + 1);
+            }else if(this.classList.contains(BTN_ACTIVE)){
+                elNum.innerHTML = numberWithCommas(numberLike);
+            }
+            changeBookmarkStyle(this);
+        });
+
+    </script>
+</body>
+</html>

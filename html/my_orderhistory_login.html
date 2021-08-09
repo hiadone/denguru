@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 주문내역조회</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header04">
+            <h1 class="h_title">주문내역조회</h1>
+            <a href="javascript:document.referrer? history.back() : location.href = 'my_orderhistory_list.html'" class="btn_goback h_btn_icon"><img src="/images/icon-goback.svg" alt="뒤로가기" class="icon"></a>
+            <button class="btn_linkstyle h_btn_icon h_btn_right btn_right"><img src="/images/icon-call.svg" alt="전화걸기" class="icon"></button>
+            <button class="btn_linkstyle h_btn_icon h_btn_right"><img src="/images/icon-trash-header.svg" alt="주문내역 삭제" class="icon"></button>
+        </header>
+
+        <div class="main">
+            <div class="pd_header04"></div>
+            <div class="top_order_number_box">
+                <div class="order_number">
+                    주문번호
+                    <span class="number">2019101012345689-12345678</span>
+                </div>
+                <div class="copy_order_number">
+                    <button type="button" onclick="showToast('toast01')" class="btn_copy_order_number btn_linkstyle btn_linkstyle_main">복 사</button>
+                </div>
+            </div>
+
+            <div class="order_history_container">
+                <div class="tab_nav02">
+                    <a href="my_orderhistory_login.html" class="tab_nav_link active"><span>회원주문</span></a>
+                    <a href="my_orderhistory_login_nonmember.html" class="tab_nav_link"><span>비회원주문</span></a>
+                </div>
+                <div class="order_history_login_container">
+                    <div class="order_history_login_announce txt_center">
+                        <div class="logo_order_shop"><img src="http://placehold.it/64x64" alt="스토어 로고" class="img"></div>
+                        <div class="order_login_announce_txt01">
+                            (스토어명) 회원이세요?
+                        </div>
+                        <div class="order_login_announce_txt02">스토어 계정을 입력하시면 댕구루앱에서<br>주문정보와 배송현황을 편리하게 확인할 수 있습니다.</div>
+                    </div>
+                    <div class="order_history_login_form members_form_contianer members_contianer">
+                        <form onsubmit="return false;" id="storeLoginForm">
+                            <div class="inp_box03">
+                                <label for="storeId" class="blind">아이디</label>
+                                <input type="text" name="storeId" id="storeId" class="inp inp_txt" placeholder="아이디">
+                            </div>
+                            <div class="inp_box03">
+                                <label for="storePassword" class="blind">비밀번호</label>
+                                <input type="password" name="storePassword" id="storePassword" class="inp inp_txt inp_password" placeholder="비밀번호">
+                            </div>
+                            <div class="inp_box03">
+                                <div class="inp_check_box">
+                                    <input type="checkbox" name="autoLogin" id="autoLogin" hidden class="inp_check" checked>
+                                    <label for="autoLogin" class="lab_checkbox01">스토어 자동로그인에 동의</label>
+                                </div>
+                            </div>
+                            <div class="btn_box">
+                                <button type="submit" id="btnLogin" class="btn btn_full btn_disabled btn_normal" disabled onclick="location.href = 'my_order_delivery_check.html'">(스토어명) 로그인</button>
+                            </div>
+                            <div class="members_link_box txt_center">
+                                <a href="" class="members_link">아이디/비밀번호 찾기</a>
+                                <a href="" class="members_link">주문페이지 가기</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast_box" id="toast01">
+            <div>
+                주문번호가 복사되었습니다.<br>붙여넣기해서 사용하세요.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var elLoginForm = document.getElementById('storeLoginForm');
+        var elInpId = document.getElementById('storeId');
+        var elInpPassword = document.getElementById('storePassword');
+        var elBtnLogin = document.getElementById('btnLogin');
+
+        var BTN_MAIN = 'btn_main';
+        var BTN_DISABLED = 'btn_disabled';
+        var BTN_NORMAL = 'btn_normal';
+
+        function handleBtnActive(){
+            elBtnLogin.classList.remove(BTN_DISABLED);
+            elBtnLogin.classList.remove(BTN_NORMAL);
+            elBtnLogin.classList.add(BTN_MAIN);
+            elBtnLogin.removeAttribute('disabled');
+        }
+        function handleBtnDisabled(){
+            elBtnLogin.classList.remove(BTN_MAIN);
+            elBtnLogin.classList.add(BTN_DISABLED);
+            elBtnLogin.classList.add(BTN_NORMAL);
+            elBtnLogin.setAttribute('disabled',true);
+        }
+        elLoginForm.addEventListener('keyup',function(){
+            var hasEmailValue = elInpId.value;
+            var hasPasswordValue = elInpPassword.value;
+
+            if(!hasEmailValue || !hasPasswordValue) {
+                handleBtnDisabled();
+            } else if(hasEmailValue && hasPasswordValue) {
+                handleBtnActive();
+            }
+        });
+
+        //토스트
+
+        var SHOW ='show';
+        var removeToast;
+
+        function showToast(id){
+            var elToast = document.getElementById(id);
+
+            if(elToast.classList.contains(SHOW)){
+                clearTimeout(removeToast), removeToast = setTimeout(function () {
+                    document.getElementById(id).classList.remove(SHOW);
+                }, 1000)
+            } else {
+                removeToast = setTimeout(function () {
+                    document.getElementById(id).classList.remove(SHOW);
+                }, 2000);
+            }
+
+            elToast.classList.add(SHOW);
+            document.querySelectorAll('button').forEach(function(el){
+                el.blur();
+            });
+        }
+
+
+    </script>
+</body>
+</html>

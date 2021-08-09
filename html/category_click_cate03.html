@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 카테고리 패션</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header04">
+            <h1 class="h_title">패션</h1>
+            <a href="javascript:document.referrer? history.back() : location.href = 'category_main.html'" class="btn_goback h_btn_icon"><img src="/images/icon-goback.svg" alt="뒤로가기" class="icon"></a>
+        </header>
+
+        <div class="main">
+            <div class="pd_header04"></div>
+            <section class="sect03 sect_filter_cate swiper-container">
+                <h2 class="blind">필터설정</h2>
+                <ul class="btn_box swiper-wrapper">
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel01">가격</button>
+                    </li>
+                    <!-- <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_main btn_mid btn_mid_round" aria-controls="tab-panel01">27,000 ~ 31,000</button>
+                    </li> -->
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel02">사이즈</button>
+                    </li>
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel05">컬러</button>
+                    </li>
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel03">연령</button>
+                    </li>
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel04">카테고리</button>
+                    </li>
+                    <!-- <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_main btn_mid btn_mid_round" aria-controls="tab-panel04">카테고리 <span class="num">2</span></button>
+                    </li> -->
+                </ul>
+            </section>
+
+            <section class="search_result_container sect04">
+                <div class="search_result_top_bar">
+                    <div class="filter_info">
+                        <img src="/images/icon-filter.svg" alt="필터" class="icon">
+                        포메라니안, 소형견, 남아, 어덜트
+                    </div>
+                    <div class="select_sort_box">
+                        <select name="sort" id="sort" class="select_sort">
+                            <option value="">인기순</option>
+                            <option value="">신상품순</option>
+                            <option value="">저가순</option>
+                            <option value="">고가순</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search_result_items">
+                    <div class="items_wrap">
+                        <ul class="item_list03">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">강아지영양제 아미노파워 스킨 뷰티 케어 200g</div>
+                                        <div class="item_price">14,740</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">벨벳마이뷰</div>
+                                        <div class="item_name">벨벳 마이뷰 강아지 종합영양제 300ml</div>
+                                        <div class="item_price">13,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">청인</div>
+                                        <div class="item_name"> 프로바이오틱스 유산균 강아지영양제</div>
+                                        <div class="item_price">11,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">버박</div>
+                                        <div class="item_name">버박뉴트리플러스겔 120.5g 1p 강아지영양제 반려동물</div>
+                                        <div class="item_price">26,680</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">더플래</div>
+                                        <div class="item_name">뉴트리플러스젠 장모 피부모질 강아지영양제 150g.뉴트리플러스젠</div>
+                                        <div class="item_price">11,400</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">닥터바이</div>
+                                        <div class="item_name">조인트 3개월 강아지 고양이 관절 영양제 특허소재</div>
+                                        <div class="item_price">94,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">데이스포</div>
+                                        <div class="item_name">데이스포 스킨앤코트 피부영양제 250g 1p 강아지영양</div>
+                                        <div class="item_price">19,590</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">인트라젠</div>
+                                        <div class="item_name">인트라젠 플러스 영양제 60g (2g x 30p)</div>
+                                        <div class="item_price">7,200</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">닥터캐닌</div>
+                                        <div class="item_name">유기농 강아지기침호흡기영양제 로가닉브레스 90g</div>
+                                        <div class="item_price">49,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">마이뷰</div>
+                                        <div class="item_name">강아지 종합영양제 300ml -종류선택</div>
+                                        <div class="item_price">17,390</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">Vets</div>
+                                        <div class="item_name">베츠 닥터퓌레 조인트케어 강아지 관절영양제</div>
+                                        <div class="item_price">15,400</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">닥터바이</div>
+                                        <div class="item_name">닥터바이 조인트 슬개골 탈구 영양제 80g</div>
+                                        <div class="item_price">23,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">쇼핑몰명</div>
+                                        <div class="item_name">상품명 상품명 상품명 상품명 상품명</div>
+                                        <div class="item_price">23,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">쇼핑몰명</div>
+                                        <div class="item_name">상품명 상품명 상품명 상품명 상품명</div>
+                                        <div class="item_price">23,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="pd_gnb_bottom" style="background-color: #fff;"></div>
+            <div class="btn_fixed_box btn_fixed_box_nognb">
+                <button type="button" class="btn btn_circle btn_normal_line btn_write btn-top" id="btnTop"><img src="/images/icon-backtop.svg" alt="맨위로" class="icon icon_up"></button>
+            </div>
+        </div>
+        <div class="popup_wrap" id="popupWrap">
+            <div class="popup_filter_container">
+                <h2 class="blind">필터설정</h2>
+                <div class="popup_top_bar" role="tablist">
+                    <button class="btn_tab btn_tab01 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel01">가격</button>
+                    <button class="btn_tab btn_tab02 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel02">사이즈</button>
+                    <button class="btn_tab btn_tab05 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel05">컬러</button>
+                    <button class="btn_tab btn_tab03 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel03">연령</button>
+                    <button class="btn_tab btn_tab04 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel04">카테고리</button>
+                </div>
+                <div class="popup_main">
+                    <div id="tab-panel01" class="tab_panel filter_price_container" role="tabpanel">
+                        <h3 class="blind">가격</h3>
+                        <div class="top_box">
+                            
+                            <div class="btn_filter_info_box popover_container">
+                                <button type="button" class="btn_filter_info btn_linkstyle" onclick="togglePopover('popover01')">
+                                    <img src="/images/icon-info.svg" alt="안내" class="icon">
+                                </button>
+                                <div class="popover popover_main popover_right_top popover_filter_info" id="popover01">그래프의 높이가 높을수록 해당 가격대에 상품이 많다는 뜻 이에요.</div>
+                            </div>
+                        </div>
+                        <div class="img_box"><img src="/images/filter-graph_02.png" alt="" class="img"></div>
+                        <div class="price_range_txt">
+                            <span class="price price_row">27,000</span>
+                            ~
+                            <span class="price price_high">315,000+</span>
+                        </div>
+                    </div>
+                    <div id="tab-panel02" class="filter_cate_container tab_panel" role="tabpanel">
+                        <div class="filter_cate_box show" id="filterCateSizeBig">
+                            <div class="filter_cate_header">
+                                전체 <span class="filter_item_num">1,234</span>
+                            </div>
+                            <ul class="filter_cate_big_box">
+                                <!-- <li class="filter_cate_big">
+                                    <button type="button" class="btn_linkstyle btn_filter_cate_big" onclick="openSmallCate('filterCateSizeBig', 'filterCateSizeSmall01')"> 초소형견 <span class="filter_item_num">434</span></button>
+                                </li> -->
+                                <li class="filter_cate_big">
+                                    <button type="button" class="btn_linkstyle btn_filter_cate_big" onclick="openSmallCate('filterCateSizeBig', 'filterCateSizeSmall02')"> 소형견 <span class="filter_item_num">500</span></button>
+                                </li>
+                                <li class="filter_cate_big">
+                                    <button type="button" class="btn_linkstyle btn_filter_cate_big" onclick="openSmallCate('filterCateSizeBig', 'filterCateSizeSmall03')"> 중형견 <span class="filter_item_num">200</span></button>
+                                </li>
+                                <li class="filter_cate_big">
+                                    <button type="button" class="btn_linkstyle btn_filter_cate_big" onclick="openSmallCate('filterCateSizeBig', 'filterCateSizeSmall04')"> 대형견 <span class="filter_item_num">100</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="filter_cate_box" id="filterCateSizeSmall01">
+                            <div class="filter_cate_header">
+                                초소형견 <span class="filter_item_num">434</span>
+                                <button class="btn_linkstyle btn_filter_cate_del" onclick="closeSmallCate('filterCateSizeBig', 'filterCateSizeSmall01')"><img src="/images/icon-del.svg" alt="닫기" class="icon"></button>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed001" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed001" class="lab_checkbox">타이니 토이 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed00" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed00" class="lab_checkbox">티컵푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed003" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed003" class="lab_checkbox">브뤼셀 그리펀 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed004" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed004" class="lab_checkbox">제페니스 친 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="filter_cate_box" id="filterCateSizeSmall02">
+                            <div class="filter_cate_header">
+                                소형견 <span class="filter_item_num">500</span>
+                                <button class="btn_linkstyle btn_filter_cate_del" onclick="closeSmallCate('filterCateSizeBig', 'filterCateSizeSmall02')"><img src="/images/icon-del.svg" alt="닫기" class="icon"></button>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed005" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed005" class="lab_checkbox">노르웨지안 룬데훈트 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed006" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed006" class="lab_checkbox">볼로네즈 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed007" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed007" class="lab_checkbox">잉글리시 토이 스패니얼 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed008" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed008" class="lab_checkbox">허배너스 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed009" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed009" class="lab_checkbox">미니어처 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed010" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed010" class="lab_checkbox">토이 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed011" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed011" class="lab_checkbox">미니어처 슈나우저 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed012" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed012" class="lab_checkbox">아펜핀셔 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_cate_box" id="filterCateSizeSmall03">
+                            <div class="filter_cate_header">
+                                중형견 <span class="filter_item_num">500</span>
+                                <button class="btn_linkstyle btn_filter_cate_del" onclick="closeSmallCate('filterCateSizeBig', 'filterCateSizeSmall03')"><img src="/images/icon-del.svg" alt="닫기" class="icon"></button>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed037" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed037" class="lab_checkbox">글렌 오브 이말 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed038" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed038" class="lab_checkbox">브리타니 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed039" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed039" class="lab_checkbox">삽살개 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed040" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed040" class="lab_checkbox">스카이 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed041" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed041" class="lab_checkbox">시코쿠 켄 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed042" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed042" class="lab_checkbox">실리엄 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed043" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed043" class="lab_checkbox">오스트레일리언 캐틀 도그 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_cate_box" id="filterCateSizeSmall04">
+                            <div class="filter_cate_header">
+                                대형견 <span class="filter_item_num">500</span>
+                                <button class="btn_linkstyle btn_filter_cate_del" onclick="closeSmallCate('filterCateSizeBig', 'filterCateSizeSmall04')"><img src="/images/icon-del.svg" alt="닫기" class="icon"></button>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed084" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed084" class="lab_checkbox">그레이트 스위스 마운틴 도그 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed085" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed085" class="lab_checkbox">네오폴리탄 마스티프 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed086" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed086" class="lab_checkbox">뉴펀들랜드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed087" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed087" class="lab_checkbox">도고 아르헨티 <span class="filter_item_num">100</span>노</label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed088" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed088" class="lab_checkbox">도사견 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed089" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed089" class="lab_checkbox">러프 콜리 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed090" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed090" class="lab_checkbox">잉글리시 마스티프 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="tab-panel05" class="tab_panel filter_cate_container" role="tabpanel">
+                        <div class="filter_cate_box show">
+                            <div class="filter_cate_header">
+                                전체 <span class="filter_item_num">6,234</span>
+                            </div>
+                            <ul class="filter_cate_color_box">
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor01" class="inp_blind" hidden>
+                                    <label for="filterColor01" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #000;"></span>
+                                        <span class="color_name">검정</span>
+                                        <span class="filter_item_num">134</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor02" class="inp_blind" hidden>
+                                    <label for="filterColor02" class="lab_checkbox">
+                                        <span class="color_box color_box02" style="background-color: #fff;"></span>
+                                        <span class="color_name">흰색</span>
+                                        <span class="filter_item_num">100</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor03" class="inp_blind" hidden>
+                                    <label for="filterColor03" class="lab_checkbox">
+                                        <span class="color_box color_box02" style="background-color: #f5f5dc;"></span>
+                                        <span class="color_name">베이지</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor04" class="inp_blind" hidden>
+                                    <label for="filterColor04" class="lab_checkbox">
+                                        <span class="color_box color_box02" style="background-color: #e1e1e1;"></span>
+                                        <span class="color_name">그레이</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor05" class="inp_blind" hidden>
+                                    <label for="filterColor05" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #e10;"></span>
+                                        <span class="color_name">레드</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor06" class="inp_blind" hidden>
+                                    <label for="filterColor06" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #ff4d7e;"></span>
+                                        <span class="color_name">핑크</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor07" class="inp_blind" hidden>
+                                    <label for="filterColor07" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #f80;"></span>
+                                        <span class="color_name">오렌지</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor08" class="inp_blind" hidden>
+                                    <label for="filterColor08" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #fe0;"></span>
+                                        <span class="color_name">옐로우</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor09" class="inp_blind" hidden>
+                                    <label for="filterColor09" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #40e0d0;"></span>
+                                        <span class="color_name">민트</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor10" class="inp_blind" hidden>
+                                    <label for="filterColor10" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #008000;"></span>
+                                        <span class="color_name">그린</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor11" class="inp_blind" hidden>
+                                    <label for="filterColor11" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #808000;"></span>
+                                        <span class="color_name">카키</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor12" class="inp_blind" hidden>
+                                    <label for="filterColor12" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #00f;"></span>
+                                        <span class="color_name">블루</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor13" class="inp_blind" hidden>
+                                    <label for="filterColor13" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #000080;"></span>
+                                        <span class="color_name">네이비</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor14" class="inp_blind" hidden>
+                                    <label for="filterColor14" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #8a2be2;"></span>
+                                        <span class="color_name">퍼플</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor15" class="inp_blind" hidden>
+                                    <label for="filterColor15" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #830d3a;"></span>
+                                        <span class="color_name">버건디</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor16" class="inp_blind" hidden>
+                                    <label for="filterColor16" class="lab_checkbox">
+                                        <span class="color_box" style="background-color: #795548;"></span>
+                                        <span class="color_name">브라운</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor17" class="inp_blind" hidden>
+                                    <label for="filterColor17" class="lab_checkbox">
+                                        <span class="color_box" style="background-image: url(./images/color-denim.png);"></span>
+                                        <span class="color_name">데님</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor18" class="inp_blind" hidden>
+                                    <label for="filterColor18" class="lab_checkbox">
+                                        <span class="color_box color_box02" style="background-image: url(./images/color-stripe.png);"></span>
+                                        <span class="color_name">스트라이프</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor19" class="inp_blind" hidden>
+                                    <label for="filterColor19" class="lab_checkbox">
+                                        <span class="color_box color_box02" style="background-image: url(./images/color-dotted.png);"></span>
+                                        <span class="color_name">도트</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor20" class="inp_blind" hidden>
+                                    <label for="filterColor20" class="lab_checkbox">
+                                        <span class="color_box color_box02" style="background-image: url(./images/color-check.png);"></span>
+                                        <span class="color_name">체크/헤링본</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor21" class="inp_blind" hidden>
+                                    <label for="filterColor21" class="lab_checkbox">
+                                        <span class="color_box color_box02" style="background-image: url(./images/color-flower.png);"></span>
+                                        <span class="color_name">플라워</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                                <li class="filter_color_box">
+                                    <input type="checkbox" name="filterColor" id="filterColor22" class="inp_blind" hidden>
+                                    <label for="filterColor22" class="lab_checkbox">
+                                        <span class="color_box color_box02" style="background-image: url(./images/color-etc.png);"></span>
+                                        <span class="color_name">기타패턴</span>
+                                        <span class="filter_item_num">500</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab-panel03" class="tab_panel filter_cate_container" role="tabpanel">
+                        <div class="filter_cate_box show">
+                            <div class="filter_cate_header">
+                                전체 <span class="filter_item_num">1,234</span>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetAge" id="filterPetAge01" class="inp_blind" hidden>
+                                    <label for="filterPetAge01" class="lab_checkbox">퍼피(1살 미만) <span class="filter_item_num">500</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetAge" id="filterPetAge02" class="inp_blind" hidden>
+                                    <label for="filterPetAge02" class="lab_checkbox">어덜트(1살 이상 ~ 7살 이하) <span class="filter_item_num">234</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetAge" id="filterPetAge03" class="inp_blind" hidden>
+                                    <label for="filterPetAge03" class="lab_checkbox">시니어(7살 이상) <span class="filter_item_num">500</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab-panel04" class="tab_panel filter_cate_container" role="tabpanel">
+                        <div class="filter_cate_box show">
+                            <div class="filter_cate_header">
+                                산책·외출 <span class="filter_item_num">1,234</span>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate01" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate01" class="lab_checkbox">탑/티셔츠/후드 <span class="filter_item_num">500</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate02" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate02" class="lab_checkbox">원피스/올인원/팬츠 <span class="filter_item_num">234</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate03" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate03" class="lab_checkbox">아우터 <span class="filter_item_num">400</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate04" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate04" class="lab_checkbox">케이프/스카프/머플러 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate05" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate05" class="lab_checkbox">모자/가방 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate06" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate06" class="lab_checkbox">악세서리 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate07" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate07" class="lab_checkbox">시즌상품/코스튬 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate08" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate08" class="lab_checkbox">커플룩 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loading">
+                        <img src="/images/icon-load01.svg" alt="" class="icon_load">
+                    </div>
+                </div>
+                <div class="popup_bottom">
+                    <button class="btn btn_linkstyle btn_refresh"><img src="/images/icon-refresh-gray.svg" alt="refresh" class="icon"> <span class="filter-cate-js"></span> 재설정</button>
+                    <button type="button" class="btn btn_accent btn_half" id="btnShowItem">200개 상품보기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="js/header.js"></script> -->
+    <script src="js/search_filter.js"></script>
+    <script>
+        var swiper = new Swiper('.sect_filter_cate', {
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+            freeMode: true,
+        });
+
+        var elPopoverAll = document.querySelectorAll('.popover');
+
+        function showPopover(id) {
+            var elPopover = document.getElementById(id);
+
+            elPopover.classList.add(SHOW);
+            console.log(id);
+        }
+        function togglePopover(id) {
+            var elPopover = document.getElementById(id);
+
+            if(elPopover.classList.contains(SHOW)){
+                elPopover.classList.remove(SHOW);
+            } else if(!elPopover.classList.contains(SHOW)){
+                elPopover.classList.add(SHOW);
+            }
+        }
+        document.getElementById('popupWrap').addEventListener('click',function(e){
+            if(e.target === this){
+                elTabPanelAll.forEach(function(el){
+                    if(el.classList.contains(SHOW)){
+                        closeFilterPopup(el);
+                    }
+                });
+            };
+        });
+
+    </script>
+     <script
+     src="https://code.jquery.com/jquery-3.5.0.min.js"
+     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+     crossorigin="anonymous"></script>
+     <script src="js/btn_top.js"></script>
+</body>
+</html>

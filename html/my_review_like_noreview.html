@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 리뷰</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">리뷰</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'my_review_mine_noreview.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="tab_nav02">
+                <a href="my_review_mine_noreview.html" class="tab_nav_link"><span>내가 쓴 리뷰</span></a>
+                <a href="my_review_like_noreview.html" class="tab_nav_link active"><span>좋아요한 리뷰</span></a>
+            </div>
+
+            <div class="review_item_container">
+                <div class="btn_fixed_box btn_fixed_box_nognb">
+                    <a href="home_review_write_noitem.html" class="btn btn_circle btn_main btn_write"><img src="/images/icon-write.svg" alt="리뷰쓰기" class="icon"></a>
+                </div>
+                <div class="noreview_message_container">
+                    <div>
+                        <div class="img_box img_noreview"><img src="/images/profile-noimg.png" alt="" class="img"></div>
+                        <div class="txt01 txt_center">아직 좋아요한 리뷰가 없습니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup_wrap">
+            <div class="popup_container popup_center" id="popupProreviewer">
+                <div class="popup_txt_box">
+                    <div class="popup_txt_title">
+                        프로리뷰어 리뷰란?
+                    </div>
+                    <div class="popup_txt_sub">
+                        댕구루 프로리뷰어로 선정된 사용자가 해당 제품을 무료로 제공받아 댕구루를 대표하는 마음으로 어떠한 가이드 없이 솔직하게 평가한 리뷰 입니다.
+                    </div>
+                    <div class="popup_txt_sub">
+                        프로리뷰어의 리뷰도 일반 리뷰와 동일한 엄격한 확인 과정을 거쳐 작성 기준에 맞지 않을 경우 수정 요청 처리됩니다.
+                    </div>
+                </div>
+                <div class="popup_btn_box">
+                    <button class="btn btn_main btn_full_popup" onclick="closePopup('popupProreviewer');">확 인</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var elBtnProfileHeart = document.querySelectorAll('.btn_profile_heart');//사용자 프로필 
+        var elReviewHeart = document.querySelectorAll('.btn_like');
+
+        var BTN_NORMAL_LINE = 'btn_normal_line';
+        var BTN_MAIN_LINE = 'btn_main_line';
+        var hrefHeart = 'images/icon-heart.svg';
+        var hrefHeartO = 'images/icon-heart-o.svg';
+
+        function changeBtnStyle(el){
+            if(el.classList.contains(BTN_NORMAL_LINE)){
+                el.classList.remove(BTN_NORMAL_LINE);
+                el.classList.add(BTN_MAIN_LINE);
+                el.querySelector('.icon').setAttribute('src',hrefHeart);
+                el.blur();
+            } else if(el.classList.contains(BTN_MAIN_LINE)){
+                el.classList.remove(BTN_MAIN_LINE);
+                el.classList.add(BTN_NORMAL_LINE);
+                el.querySelector('.icon').setAttribute('src',hrefHeartO);
+                el.blur();
+            }
+        }
+
+        elBtnProfileHeart.forEach(function(el){
+            el.addEventListener('click',function(){
+                changeBtnStyle(this);
+            });
+        });
+
+        elReviewHeart.forEach(function(el){
+            el.addEventListener('click',function(){
+                var elNum = el.querySelector('.num');
+                var numberLike = elNum.textContent;
+
+                if(el.classList.contains(BTN_NORMAL_LINE)){
+                    elNum.textContent = Number(numberLike) + 1;
+                }else if(el.classList.contains(BTN_MAIN_LINE)){
+                    elNum.textContent = Number(numberLike) - 1;
+                }
+                changeBtnStyle(this);
+            });
+        })
+        
+        //프로리뷰어 리뷰팝업
+        var elBtnProreviewer = document.querySelectorAll('.btn_proreviewer');
+        var elPopupWrap = document.querySelector('.popup_wrap');
+        var SHOW = 'show';
+
+        function openPopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.add(SHOW);
+            elPopupContainer.classList.add(SHOW);
+        }
+        function closePopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.remove(SHOW);
+            elPopupContainer.classList.remove(SHOW);
+        }
+
+        elBtnProreviewer.forEach(function(el){
+            el.addEventListener('click', function(){
+                openPopup('popupProreviewer');
+            });
+        });
+
+        // 리뷰이미지 swiper
+        var swiper = new Swiper('.review_list02 .review_img_container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            freeMode: true,
+        });
+    </script>
+</body>
+</html>

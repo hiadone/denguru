@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 로그인</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">로그인</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'index_logout.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="members_contianer">
+                <div class="members_logo img_box"><img src="/images/logo-horizontal.svg" alt="댕구루로고" class="img"></div>
+                <div class="members_form_contianer">
+                    <h2 class="blind">로그인 영역</h2>
+                    <form onsubmit="return false;" id="loginForm">
+                        <div class="inp_box03">
+                            <label for="userMail" class="blind">이메일</label>
+                            <input type="email" name="userMail" id="userMail" class="inp inp_txt" placeholder="이메일">
+                        </div>
+                        <div class="inp_box03">
+                            <label for="userPassword" class="blind">비밀번호</label>
+                            <input type="password" name="userPassword" id="userPassword" class="inp inp_txt inp_password" placeholder="비밀번호">
+                        </div>
+                        <div class="inp_box03">
+                            <div class="inp_check_box">
+                                <input type="checkbox" name="autoLogin" id="autoLogin" hidden class="inp_check" checked>
+                                <label for="autoLogin" class="lab_checkbox01">자동로그인</label>
+                            </div>
+                        </div>
+                        <div class="btn_box">
+                            <button type="submit" id="btnLogin" class="btn btn_full btn_disabled btn_normal" disabled onclick="location.href = 'index.html'">로그인</button>
+                        </div>
+                        <div class="members_link_box txt_center">
+                            <a href="my_find_password.html" class="members_link">비밀번호 찾기</a>
+                            <a href="my_join_button.html" class="members_link">회원가입</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="sns_login_box">
+                    <h2 class="sns_login_title txt_center">SNS 계정으로 간편하게 회원가입/로그인 하세요.</h2>
+                    <div class="sns_login_btn_box">
+                        <a href="" class="sns_login_btn sns_naver"><img src="/images/sns_naver.svg" alt="네이버 로그인" class="img"></a>
+                        <a href="" class="sns_login_btn sns_facebook"><img src="/images/sns_facebook.svg" alt="페이스북 로그인" class="img"></a>
+                        <a href="" class="sns_login_btn sns_kakao"><img src="/images/sns_kakao.svg" alt="카카오톡 로그인" class="img"></a>
+                        <a href="" class="sns_login_btn sns_google"><img src="/images/sns_google.svg" alt="구글 로그인" class="img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var elLoginForm = document.getElementById('loginForm');
+        var elInpEmail = document.getElementById('userMail');
+        var elInpPassword = document.getElementById('userPassword');
+        var elBtnLogin = document.getElementById('btnLogin');
+
+        var BTN_MAIN = 'btn_main';
+        var BTN_DISABLED = 'btn_disabled';
+        var BTN_NORMAL = 'btn_normal';
+
+        function handleBtnActive(){
+            elBtnLogin.classList.remove(BTN_DISABLED);
+            elBtnLogin.classList.remove(BTN_NORMAL);
+            elBtnLogin.classList.add(BTN_MAIN);
+            elBtnLogin.removeAttribute('disabled');
+        }
+        function handleBtnDisabled(){
+            elBtnLogin.classList.remove(BTN_MAIN);
+            elBtnLogin.classList.add(BTN_DISABLED);
+            elBtnLogin.classList.add(BTN_NORMAL);
+            elBtnLogin.setAttribute('disabled',true);
+        }
+        elLoginForm.addEventListener('input',function(){
+            var hasEmailValue = elInpEmail.value;
+            var hasPasswordValue = elInpPassword.value;
+
+            if(!hasEmailValue || !hasPasswordValue) {
+                handleBtnDisabled();
+            } else if(hasEmailValue && hasPasswordValue) {
+                handleBtnActive();
+            }
+        });
+
+
+    </script>
+</body>
+</html>

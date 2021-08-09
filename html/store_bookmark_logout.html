@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 스토어 - 즐겨찾기</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header06">
+            <h1 class="h_logo_box"><a href="index.html" class="h_link"><img src="/images/logo-horizontal.svg" alt="DENGURU 로고" class="h_logo"></a></h1>
+            <div class="h_btn h_btn_mlauto">
+                <a href="search.html" class=""><img src="/images/icon-search-gray.svg" alt="검색"></a>
+            </div>
+            <div class="h_btn">
+                <!-- <span class="has_alarm"><span class="blind">알림이 있습니다</span></span> -->
+                <a href="my_notification.html"><img src="/images/icon-bell-with-dot.svg" alt="알림" class="icon"></a>
+            </div>
+        </header>
+        <nav class="gnb_bottom">
+            <h2 class="blind">하단 네비게이션</h2>
+            <ul class="gnb_list">
+                <li class="gnb_item active">
+                    <a href="store_rank.html" class="gnb_link">
+                        <img src="/images/gnb-store-active.svg" alt="store" class="gnb_icon">
+                        <span class="gnb_txt blind">store</span>
+                    </a>
+                </li>
+                <li class="gnb_item">
+                    <a href="category_main.html" class="gnb_link">
+                        <img src="/images/gnb-category.svg" alt="category" class="gnb_icon">
+                        <span class="gnb_txt blind">category</span>
+                    </a>
+                </li>
+                <li class="gnb_item">
+                    <a href="index.html" class="gnb_link">
+                        <img src="/images/gnb-home.svg" alt="home" class="gnb_icon">
+                        <span class="gnb_txt blind">home</span>
+                    </a>
+                </li>
+                <li class="gnb_item">
+                    <a href="pick_main.html" class="gnb_link">
+                        <img src="/images/gnb-pick.svg" alt="pick" class="gnb_icon">
+                        <span class="gnb_txt blind">pick</span>
+                    </a>
+                </li>
+                <li class="gnb_item">
+                    <a href="my_main_resister.html" class="gnb_link">
+                        <img src="/images/gnb-my.svg" alt="my" class="gnb_icon">
+                        <span class="gnb_txt blind">my</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <div class="pd_header06"></div>
+            <div class="tab_nav store_tab_nav">
+                <h2 class="blind">스토어 서브메뉴</h2>
+                <a href="store_rank.html" class="tab_nav_link">댕구루 랭킹</a>
+                <a href="store_bookmark.html" class="tab_nav_link active">즐겨찾기</a>
+            </div>
+            <section class="store_list_favorite">
+                <h2 class="title_favorite">즐겨찾기 <span class="emph">0</span></h2>
+                <div class="favorite_nodata">
+                    <div class="favorite_nodata_img_box">
+                        <img src="/images/nodata-bookmark.png" alt="" class="favorite_nodata_img">
+                    </div>
+                    <div class="favorite_nodata_login_box txt_center">
+                        <div class="favorite_nodata_login_txt">
+                            로그인 후 이용할 수 있는 서비스입니다
+                        </div>
+                        <a href="my_login.html" class="btn btn_accent btn_big_round btn_half favorite_btn_login">로그인</a>
+                    </div>
+                </div>
+            </section>
+            <!-- <div class="pd_gnb_bottom"></div> -->
+            <div class="pd_gnb_bottom" style="height: 32px;background-color: #fff;"></div>
+            <div class="btn_fixed_box">
+                <button type="button" class="btn btn_circle btn_normal_line btn_write btn-top" id="btnTop"><img src="/images/icon-backtop.svg" alt="맨위로" class="icon icon_up"></button>
+            </div>
+        </div>
+        <div class="popup_wrap">
+            <div class="popup_container popup_center" id="popupWarn">
+                <div class="popup_img_warn">
+                    <img src="/images/icon-warn.svg" alt="!" class="img">
+                </div>
+                <div class="popup_txt_box">
+                    <div class="popup_txt_main txt_center">휴면 쇼핑몰이에요</div>
+                    <div class="popup_txt_sub txt_center">쇼핑몰 명은<br>응대가 원활 하지 않을 수 있습니다.</div>
+                </div>
+                <div class="popup_btn_box02">
+                    <button class="btn btn_half_popup btn_normal_line" onclick="location.href='store_detail.html'">연결</button>
+                    <button class="btn btn_half_popup btn_main btn_right" onclick="closePopup('popupWarn')">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script>
+        //
+        var elPopupWrap = document.querySelector('.popup_wrap');
+        var SHOW = 'show';
+
+        function openPopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.add(SHOW);
+            document.body.style.overflow = "hidden";
+            elPopupContainer.classList.add(SHOW);
+        }
+        function closePopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupContainer.classList.remove(SHOW);
+            elPopupWrap.classList.remove(SHOW);
+            document.body.style.overflow = "visible";
+        }
+        
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+    <script src="js/btn_top.js"></script>
+</body>
+</html>

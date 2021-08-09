@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 앱 문의/ 건의하기</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">앱 문의/ 건의하기</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'my_main_nopet.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="complain_container">
+                <h2 class="title08">1:1 문의내역</h2>
+
+                <div class="complain_announce_container">
+                    <h3 class="title09">상담시간</h3>
+                    <div class="complain_announce_txt">
+                        평일(월~금) 11:00 ~ 17:00
+                        <br>(Off-time 12:00~14:00, 토/일/공휴일 휴무)
+                    </div>
+                    <div class="complain_announce_txt">
+                        한번 등록한 상담내용은 수정이 불가합니다.
+                    </div>
+                    <div class="btn_box">
+                        <a href="my_complain_write.html" class="btn btn_mid btn_main">1:1 문의하기</a>
+                    </div>
+                </div>
+
+                <div class="complain_list_container">
+                    <div class="noreview_message_container">
+                        <div>
+                            <div class="txt03 txt_center">작성된 1:1 문의가 없습니다</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script:src -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.js-btn-accordion').on('click',function(){
+                $(this).parent('.complain_title_box').siblings('.complain_content_box').slideToggle();
+                $(this).toggleClass('up');
+                $(this).blur();
+            });
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU :: 설정</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">설정</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'my_main_resister.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="my_setting_wrap">
+                <div class="my_setting_container">
+                    <div class="my_setting_box">
+                        <div class="my_setting_txt">푸시 수신동의</div>
+                        <div class="my_setting_btn switch_box">
+                            <input type="checkbox" name="agreePush" id="agreePush" hidden class="inp_blind" checked>
+                            <label for="agreePush" class="inp_switch"><span class="circle_switch"></span></label>
+                        </div>
+                    </div>
+                    <div class="my_setting_box">
+                        <div class="my_setting_txt">SMS 수신동의</div>
+                        <div class="my_setting_btn switch_box">
+                            <input type="checkbox" name="agreeSMS" id="agreeSMS" hidden class="inp_blind">
+                            <label for="agreeSMS" class="inp_switch"><span class="circle_switch"></span></label>
+                        </div>
+                    </div>
+                    <div class="my_setting_box">
+                        <div class="my_setting_txt">이메일 수신동의</div>
+                        <div class="my_setting_btn switch_box">
+                            <input type="checkbox" name="agreeMail" id="agreeMail" hidden class="inp_blind" checked>
+                            <label for="agreeMail" class="inp_switch"><span class="circle_switch"></span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_setting_container">
+                    <div class="my_setting_box">
+                        <div class="my_setting_txt">오픈소스 라이선스</div>
+                        <div class="my_setting_btn">
+                            <a href=""><img src="/images/icon-angle-right-gray.svg" alt=">" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="my_setting_box">
+                        <div class="my_setting_txt">캐시데이터 지우기</div>
+                        <div class="my_setting_btn">
+                            <a href="javascript: openPopup('popupDelCash')"><img src="/images/icon-angle-right-gray.svg" alt=">" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_setting_container">
+                    <div class="my_setting_box">
+                        <div class="my_setting_txt">회원정보수정</div>
+                        <div class="my_setting_btn">
+                            <a href="my_edit_input_pw.html"><img src="/images/icon-angle-right-gray.svg" alt=">" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="my_setting_box">
+                        <div class="my_setting_txt">로그아웃</div>
+                        <div class="my_setting_btn">
+                            <a href="javascript: openPopup('popupLogout')"><img src="/images/icon-angle-right-gray.svg" alt=">" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="my_setting_link">
+                    <a href="my_withdrawal.html" class="link">회원탈퇴</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup_wrap">
+            <div class="popup_container popup_center" id="popupLogout">
+                <div class="popup_txt_box">
+                    <div class="popup_txt_main txt_center">로그아웃 하시겠어요?</div>
+                    <div class="popup_txt_sub txt_center">내 상품/즐겨찾기가 저장되지 않아요.</div>
+                </div>
+                <div class="popup_btn_box02">
+                    <button class="btn btn_half_popup btn_normal_line" onclick="closePopup('popupLogout')">취소</button>
+                    <button class="btn btn_half_popup btn_main btn_right" onclick="location.href='index_logout.html'">로그아웃</button>
+                </div>
+            </div>
+            <div class="popup_container popup_center" id="popupDelCash">
+                <div class="popup_txt_box">
+                    <div class="popup_txt_main txt_center">캐시 데이터 지우기</div>
+                    <div class="popup_txt_sub txt_center">
+                        캐시데이터를 지우면 ㅇㅇㅇㅇ, ㅇㅇㅇㅇ, ㅇㅇㅇㅇ 을 볼 수 없어요.
+                    </div>
+                    <div class="popup_txt_sub txt_center">
+                        그래도 삭제하시겠습니까?
+                    </div>
+                </div>
+                <div class="popup_btn_box02">
+                    <button class="btn btn_half_popup btn_normal_line" onclick="closePopup('popupDelCash')">취소</button>
+                    <button class="btn btn_half_popup btn_main btn_right" onclick="closePopup('popupDelCash');showToast('toast01');">확인</button>
+                </div>
+            </div>
+        </div>
+        <div class="toast_box" id="toast01">
+            <div>
+                캐시데이터를 삭제했습니다.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var elPopupWrap = document.querySelector('.popup_wrap');
+        var SHOW = 'show';
+
+        function openPopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.add(SHOW);
+            elPopupContainer.classList.add(SHOW);
+        }
+        function closePopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.remove(SHOW);
+            elPopupContainer.classList.remove(SHOW);
+        }
+        
+        var removeToast;
+
+        function showToast(id){
+            var elToast = document.getElementById(id);
+
+            if(elToast.classList.contains(SHOW)){
+                clearTimeout(removeToast), removeToast = setTimeout(function () {
+                    document.getElementById(id).classList.remove(SHOW);
+                }, 1000)
+            } else {
+                removeToast = setTimeout(function () {
+                    document.getElementById(id).classList.remove(SHOW);
+                }, 2000);
+            }
+
+            elToast.classList.add(SHOW);
+            document.querySelectorAll('button').forEach(function(el){
+                el.blur();
+            });
+        }
+    </script>
+</body>
+</html>

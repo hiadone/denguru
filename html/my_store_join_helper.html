@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 쇼핑몰 가입 도우미</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">스토어 가입도우미</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'my_main_resister.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="img_box"><img src="/images/store_helper_bnr02.png" alt="딱 한번만 입력해 놓으면, 쇼핑몰 가입 필드를 자동으로 채워드려요" class="img"></div>
+
+            <div class="store_join_form_wrap">
+                <form onsubmit="return false;">
+                    <div class="store_join_form_container">
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserId" class="lab_txt">아이디</label>
+                                <input type="text" class="inp_txt js-input" id="storeUserId" label="아이디">
+                            </div>
+                        </div>
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserName" class="lab_txt">이름</label>
+                                <input type="text" class="inp_txt js-input" id="storeUserName" label="이름">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_join_form_container">
+                        <div class="inp_box04 inp_box04_flex">
+                            <div class="inp_txt_box inp_disabled">
+                                <label for="storeUserAddressNum" class="lab_txt">우편번호</label>
+                                <input type="text" class="inp_txt js-input " id="storeUserAddressNum" label="우편번호" disabled>
+                            </div>
+                            <div class="inp_btn_box"><button class="btn btn_main btn_mid">우편번호 찾기</button></div>
+                        </div>
+                        <div class="inp_box04">
+                            <div class="inp_txt_box inp_disabled">
+                                <label for="storeUserAddress01" class="lab_txt">주소</label>
+                                <input type="text" class="inp_txt js-input" id="storeUserAddress01" label="주소" disabled>
+                            </div>
+                        </div>
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserAddress02" class="lab_txt">나머지 주소</label>
+                                <input type="text" class="inp_txt js-input" id="storeUserAddress02" label="나머지 주소">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_join_form_container">
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserTel01" class="lab_txt">일반전화</label>
+                                <div class="tel_box inp_txt">
+                                    <select name="storeUserTel" id="storeUserTel01" class="inp_txt inp_tel">
+                                        <option value="">02</option>
+                                        <option value="">031</option>
+                                        <option value="">032</option>
+                                        <option value="">033</option>
+                                        <option value="">041</option>
+                                        <option value="">042</option>
+                                        <option value="">043</option>
+                                        <option value="">044</option>
+                                        <option value="">051</option>
+                                        <option value="">052</option>
+                                        <option value="">053</option>
+                                        <option value="">054</option>
+                                        <option value="">055</option>
+                                        <option value="">061</option>
+                                        <option value="">062</option>
+                                        <option value="">063</option>
+                                        <option value="">064</option>
+                                        <option value="">067</option>
+                                    </select>
+                                    -
+                                    <input type="tel" name="storeUserTel" class="inp_txt inp_tel js-input" id="storeUserTel02" label="일반전화">
+                                    -
+                                    <input type="tel" name="storeUserTel" class="inp_txt inp_tel js-input" id="storeUserTel02" label="일반전화">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserMobile01" class="lab_txt">휴대폰 번호</label>
+                                <div class="tel_box inp_txt">
+                                    <select name="storeUserMobile" id="storeUserMobile01" class="inp_txt inp_tel">
+                                        <option value="">010</option>
+                                        <option value="">011</option>
+                                        <option value="">016</option>
+                                        <option value="">017</option>
+                                        <option value="">018</option>
+                                        <option value="">019</option>
+                                    </select>
+                                    -
+                                    <input type="tel" name="storeUserMobile" class="inp_txt inp_tel js-input" id="storeUserMobile02" label="일반전화">
+                                    -
+                                    <input type="tel" name="storeUserMobile" class="inp_txt inp_tel js-input" id="storeUserMobile02" label="일반전화">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_join_form_container">
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserEmail" class="lab_txt">이메일</label>
+                                <input type="email" class="inp_txt js-input" id="storeUserEmail" label="이메일" placeholder="email@email.com">
+                            </div>
+                        </div>
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserBirth" class="lab_txt">생년월일</label>
+                                <input type="text" class="inp_txt js-input" id="storeUserBirth" label="생년월일" placeholder="19990101">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_join_form_container">
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserPWquestion" class="lab_txt">비밀번호 확인 질문</label>
+                                <select name="storeUserPWquestion" id="storeUserPWquestion" class="inp_txt">
+                                    <option value="">선택</option>
+                                    <option value="">기억에 남는 추억의 장소는?</option>
+                                    <option value="">자신의 인생 좌우명은?</option>
+                                    <option value="">자신의 보물 제 1호는?</option>
+                                    <option value="">가장기억에 남는 선생님 성함은?</option>
+                                    <option value="">타인이 모르는 자신만의 신체 비밀이 있다면?</option>
+                                    <option value="">추억하고 싶은 날짜가 있다면?</option>
+                                    <option value="">받았던 선물중 기억에 남는 독특한 선물은?</option>
+                                    <option value="">유년시절 가장 생각나는 친구 이름은?</option>
+                                    <option value="">인상 깊게 읽은 책 이름은?</option>
+                                    <option value="">읽은 책 중에서 좋아하는 구절이 있다면?</option>
+                                    <option value="">자신이 두번재로 존경하는 인물은?</option>
+                                    <option value="">친구들에게 공개하지 않은 어릴적 별명이 있다면?</option>
+                                    <option value="">다시 태어나면 되고 싶은 것은?</option>
+                                    <option value="">내가 좋아하는 캐릭터는?</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inp_box04">
+                            <div class="inp_txt_box">
+                                <label for="storeUserEmail" class="lab_txt">비밀번호 확인 답변</label>
+                                <input type="text" class="inp_txt js-input" id="storeUserEmail" label="이메일">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_box store_join_form_container">
+                        <button class="btn btn_full btn_main">완료</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

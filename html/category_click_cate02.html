@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 카테고리 산책·외출</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header04">
+            <h1 class="h_title">산책·외출</h1>
+            <a href="javascript:document.referrer? history.back() : location.href = 'category_main.html'" class="btn_goback h_btn_icon"><img src="/images/icon-goback.svg" alt="뒤로가기" class="icon"></a>
+        </header>
+
+        <div class="main">
+            <div class="pd_header04"></div>
+            <section class="sect03 sect_filter_cate swiper-container">
+                <h2 class="blind">필터설정</h2>
+                <ul class="btn_box swiper-wrapper">
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel01">가격</button>
+                    </li>
+                    <!-- <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_main btn_mid btn_mid_round" aria-controls="tab-panel01">27,000 ~ 31,000</button>
+                    </li> -->
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel02">사이즈</button>
+                    </li>
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel03">연령</button>
+                    </li>
+                    <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_normal_line btn_mid btn_mid_round" aria-controls="tab-panel04">카테고리</button>
+                    </li>
+                    <!-- <li class="filter_btn swiper-slide">
+                        <button type="button" class="btn_filter_popup btn btn_main btn_mid btn_mid_round" aria-controls="tab-panel04">카테고리 <span class="num">2</span></button>
+                    </li> -->
+                </ul>
+            </section>
+
+            <section class="search_result_container sect04">
+                <div class="search_result_top_bar">
+                    <div class="filter_info">
+                        <img src="/images/icon-filter.svg" alt="필터" class="icon">
+                        포메라니안, 소형견, 남아, 어덜트
+                    </div>
+                    <div class="select_sort_box">
+                        <select name="sort" id="sort" class="select_sort">
+                            <option value="">인기순</option>
+                            <option value="">신상품순</option>
+                            <option value="">저가순</option>
+                            <option value="">고가순</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search_result_items">
+                    <div class="items_wrap">
+                        <ul class="item_list03">
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">리치독</div>
+                                        <div class="item_name">강아지영양제 아미노파워 스킨 뷰티 케어 200g</div>
+                                        <div class="item_price">14,740</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">벨벳마이뷰</div>
+                                        <div class="item_name">벨벳 마이뷰 강아지 종합영양제 300ml</div>
+                                        <div class="item_price">13,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">청인</div>
+                                        <div class="item_name"> 프로바이오틱스 유산균 강아지영양제</div>
+                                        <div class="item_price">11,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">버박</div>
+                                        <div class="item_name">버박뉴트리플러스겔 120.5g 1p 강아지영양제 반려동물</div>
+                                        <div class="item_price">26,680</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">더플래</div>
+                                        <div class="item_name">뉴트리플러스젠 장모 피부모질 강아지영양제 150g.뉴트리플러스젠</div>
+                                        <div class="item_price">11,400</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">닥터바이</div>
+                                        <div class="item_name">조인트 3개월 강아지 고양이 관절 영양제 특허소재</div>
+                                        <div class="item_price">94,000</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">데이스포</div>
+                                        <div class="item_name">데이스포 스킨앤코트 피부영양제 250g 1p 강아지영양</div>
+                                        <div class="item_price">19,590</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">인트라젠</div>
+                                        <div class="item_name">인트라젠 플러스 영양제 60g (2g x 30p)</div>
+                                        <div class="item_price">7,200</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">닥터캐닌</div>
+                                        <div class="item_name">유기농 강아지기침호흡기영양제 로가닉브레스 90g</div>
+                                        <div class="item_price">49,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">마이뷰</div>
+                                        <div class="item_name">강아지 종합영양제 300ml -종류선택</div>
+                                        <div class="item_price">17,390</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">Vets</div>
+                                        <div class="item_name">베츠 닥터퓌레 조인트케어 강아지 관절영양제</div>
+                                        <div class="item_price">15,400</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">닥터바이</div>
+                                        <div class="item_name">닥터바이 조인트 슬개골 탈구 영양제 80g</div>
+                                        <div class="item_price">23,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">쇼핑몰명</div>
+                                        <div class="item_name">상품명 상품명 상품명 상품명 상품명</div>
+                                        <div class="item_price">23,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item_box">
+                                <a href="home_item_info.html">
+                                    <div class="item_thum">
+                                        <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                                    </div>
+                                    <div class="item_txt_box">
+                                        <div class="item_shop">쇼핑몰명</div>
+                                        <div class="item_name">상품명 상품명 상품명 상품명 상품명</div>
+                                        <div class="item_price">23,900</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="pd_gnb_bottom" style="background-color: #fff;"></div>
+            <div class="btn_fixed_box btn_fixed_box_nognb">
+                <button type="button" class="btn btn_circle btn_normal_line btn_write btn-top" id="btnTop"><img src="/images/icon-backtop.svg" alt="맨위로" class="icon icon_up"></button>
+            </div>
+        </div>
+        <div class="popup_wrap" id="popupWrap">
+            <div class="popup_filter_container">
+                <h2 class="blind">필터설정</h2>
+                <div class="popup_top_bar" role="tablist">
+                    <button class="btn_tab btn_tab01 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel01">가격</button>
+                    <button class="btn_tab btn_tab02 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel02">사이즈</button>
+                    <button class="btn_tab btn_tab03 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel03">연령</button>
+                    <button class="btn_tab btn_tab04 btn_linkstyle" type="button" role="tab" aria-controls="tab-panel04">카테고리</button>
+                </div>
+                <div class="popup_main">
+                    <div id="tab-panel01" class="tab_panel filter_price_container" role="tabpanel">
+                        <h3 class="blind">가격</h3>
+                        <div class="top_box">
+                            
+                            <div class="btn_filter_info_box popover_container">
+                                <button type="button" class="btn_filter_info btn_linkstyle" onclick="togglePopover('popover01')">
+                                    <img src="/images/icon-info.svg" alt="안내" class="icon">
+                                </button>
+                                <div class="popover popover_main popover_right_top popover_filter_info" id="popover01">그래프의 높이가 높을수록 해당 가격대에 상품이 많다는 뜻 이에요.</div>
+                            </div>
+                        </div>
+                        <div class="img_box"><img src="/images/filter-graph_02.png" alt="" class="img"></div>
+                        <div class="price_range_txt">
+                            <span class="price price_row">27,000</span>
+                            ~
+                            <span class="price price_high">315,000+</span>
+                        </div>
+                    </div>
+                    <div id="tab-panel02" class="filter_cate_container tab_panel" role="tabpanel">
+                        <div class="filter_cate_box show" id="filterCateSizeBig">
+                            <div class="filter_cate_header">
+                                전체 <span class="filter_item_num">1,234</span>
+                            </div>
+                            <ul class="filter_cate_big_box">
+                                <!-- <li class="filter_cate_big">
+                                    <button type="button" class="btn_linkstyle btn_filter_cate_big" onclick="openSmallCate('filterCateSizeBig', 'filterCateSizeSmall01')"> 초소형견 <span class="filter_item_num">434</span></button>
+                                </li> -->
+                                <li class="filter_cate_big">
+                                    <button type="button" class="btn_linkstyle btn_filter_cate_big" onclick="openSmallCate('filterCateSizeBig', 'filterCateSizeSmall02')"> 소형견 <span class="filter_item_num">500</span></button>
+                                </li>
+                                <li class="filter_cate_big">
+                                    <button type="button" class="btn_linkstyle btn_filter_cate_big" onclick="openSmallCate('filterCateSizeBig', 'filterCateSizeSmall03')"> 중형견 <span class="filter_item_num">200</span></button>
+                                </li>
+                                <li class="filter_cate_big">
+                                    <button type="button" class="btn_linkstyle btn_filter_cate_big" onclick="openSmallCate('filterCateSizeBig', 'filterCateSizeSmall04')"> 대형견 <span class="filter_item_num">100</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="filter_cate_box" id="filterCateSizeSmall01">
+                            <div class="filter_cate_header">
+                                초소형견 <span class="filter_item_num">434</span>
+                                <button class="btn_linkstyle btn_filter_cate_del" onclick="closeSmallCate('filterCateSizeBig', 'filterCateSizeSmall01')"><img src="/images/icon-del.svg" alt="닫기" class="icon"></button>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed001" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed001" class="lab_checkbox">타이니 토이 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed00" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed00" class="lab_checkbox">티컵푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed003" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed003" class="lab_checkbox">브뤼셀 그리펀 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed004" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed004" class="lab_checkbox">제페니스 친 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="filter_cate_box" id="filterCateSizeSmall02">
+                            <div class="filter_cate_header">
+                                소형견 <span class="filter_item_num">500</span>
+                                <button class="btn_linkstyle btn_filter_cate_del" onclick="closeSmallCate('filterCateSizeBig', 'filterCateSizeSmall02')"><img src="/images/icon-del.svg" alt="닫기" class="icon"></button>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed700" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed700" class="lab_checkbox">소형견 전체 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed701" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed701" class="lab_checkbox">노르웨지안 룬데훈트 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed702" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed702" class="lab_checkbox">노퍽 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed703" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed703" class="lab_checkbox">닥스훈트 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed704" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed704" class="lab_checkbox">라사 압소 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed705" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed705" class="lab_checkbox">로첸 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed706" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed706" class="lab_checkbox">말티즈 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed707" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed707" class="lab_checkbox">말티츄 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed708" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed708" class="lab_checkbox">말티푸 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed709" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed709" class="lab_checkbox">맨체스터 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed710" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed710" class="lab_checkbox">미니어처 슈나우저 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed711" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed711" class="lab_checkbox">미니어처 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed712" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed712" class="lab_checkbox">미니어처 핀셔 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed713" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed713" class="lab_checkbox">믹스 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed714" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed714" class="lab_checkbox">베들링턴 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed715" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed715" class="lab_checkbox">볼로네즈 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed716" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed716" class="lab_checkbox">브뤼셀 그리펀 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed717" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed717" class="lab_checkbox">빠삐용 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed718" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed718" class="lab_checkbox">스키퍼키 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed719" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed719" class="lab_checkbox">시츄 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed720" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed720" class="lab_checkbox">실키 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed721" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed721" class="lab_checkbox">아펜핀셔 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed722" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed722" class="lab_checkbox">와이어 폭스 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed723" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed723" class="lab_checkbox">요크셔 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed724" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed724" class="lab_checkbox">이탈리안 그레이하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed725" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed725" class="lab_checkbox">잭 러셀 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed726" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed726" class="lab_checkbox">제페니즈 친 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed727" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed727" class="lab_checkbox">치와와 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed728" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed728" class="lab_checkbox">케언 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed729" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed729" class="lab_checkbox">코카푸 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed730" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed730" class="lab_checkbox">코튼 드 툴리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed731" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed731" class="lab_checkbox">킹 찰스 스패니얼 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed732" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed732" class="lab_checkbox">타이니 토이 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed733" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed733" class="lab_checkbox">토이 폭스 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed734" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed734" class="lab_checkbox">토이 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed735" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed735" class="lab_checkbox">티컵 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed736" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed736" class="lab_checkbox">퍼그 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed737" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed737" class="lab_checkbox">페키니즈 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed738" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed738" class="lab_checkbox">포메라니안 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed739" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed739" class="lab_checkbox">폼피츠 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed740" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed740" class="lab_checkbox">허배너스 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed741" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed741" class="lab_checkbox">화이트 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_cate_box" id="filterCateSizeSmall03">
+                            <div class="filter_cate_header">
+                                중형견 <span class="filter_item_num">500</span>
+                                <button class="btn_linkstyle btn_filter_cate_del" onclick="closeSmallCate('filterCateSizeBig', 'filterCateSizeSmall03')"><img src="/images/icon-del.svg" alt="닫기" class="icon"></button>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed800" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed800" class="lab_checkbox">중형견 전체 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed801" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed801" class="lab_checkbox">글렌 오브 이말 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed802" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed802" class="lab_checkbox">댄디 딘몬트 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed803" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed803" class="lab_checkbox">미니어처 불 테리어 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed804" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed804" class="lab_checkbox">미디엄 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed805" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed805" class="lab_checkbox">믹스 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed806" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed806" class="lab_checkbox">바셋 하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed807" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed807" class="lab_checkbox">벨지안 셰퍼드 독 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_cate_box" id="filterCateSizeSmall04">
+                            <div class="filter_cate_header">
+                                대형견 <span class="filter_item_num">500</span>
+                                <button class="btn_linkstyle btn_filter_cate_del" onclick="closeSmallCate('filterCateSizeBig', 'filterCateSizeSmall04')"><img src="/images/icon-del.svg" alt="닫기" class="icon"></button>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed900" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed900" class="lab_checkbox">대형견 전체 <span class="filter_item_num">4,600</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed084" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed084" class="lab_checkbox">골든 리트리버 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed085" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed085" class="lab_checkbox">그레이 하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed086" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed086" class="lab_checkbox">그레이트 데인 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed087" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed087" class="lab_checkbox">그레이트 스위스 마운틴 도그 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed088" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed088" class="lab_checkbox">그레이트 피레니즈 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed089" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed089" class="lab_checkbox">네오폴리탄 마스티프 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed090" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed090" class="lab_checkbox">뉴펀들랜드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed091" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed091" class="lab_checkbox">달마시안 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed092" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed092" class="lab_checkbox">도고 아르헨티노 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed093" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed093" class="lab_checkbox">도베르만 핀셔 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed094" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed094" class="lab_checkbox">도사견 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed095" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed095" class="lab_checkbox">래브라도 리트리버 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed096" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed096" class="lab_checkbox">러프 콜리 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed097" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed097" class="lab_checkbox">로트와일러 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed098" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed098" class="lab_checkbox">믹스 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed099" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed099" class="lab_checkbox">버니즈 마운틴 독 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed100" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed100" class="lab_checkbox">보르조이 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed101" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed101" class="lab_checkbox">복서 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed102" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed102" class="lab_checkbox">부비에 데 플랑드르 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed102" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed102" class="lab_checkbox">불 마스티프 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed103" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed103" class="lab_checkbox">브리아드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed104" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed104" class="lab_checkbox">블러드 하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed105" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed105" class="lab_checkbox">비즐라 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed106" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed106" class="lab_checkbox">살루키 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed107" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed107" class="lab_checkbox">세인트 버나드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed108" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed108" class="lab_checkbox">스코티시 디어하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed109" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed109" class="lab_checkbox">스탠다드 푸들 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed110" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed110" class="lab_checkbox">아메리칸 에스키모 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed111" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed111" class="lab_checkbox">아이리쉬 셰터 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed112" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed112" class="lab_checkbox">아이리쉬 울프하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed113" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed113" class="lab_checkbox">아키타 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed114" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed114" class="lab_checkbox">아프간 하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed115" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed115" class="lab_checkbox">알래스칸 맬러뮤트 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed116" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed116" class="lab_checkbox">오스트레일리안 셰퍼드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed117" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed117" class="lab_checkbox">올드 잉글리시 쉽독 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed118" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed118" class="lab_checkbox">와이마라너 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed119" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed119" class="lab_checkbox">잉글리시 마스티프 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed120" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed120" class="lab_checkbox">잉글리시 세터 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed121" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed121" class="lab_checkbox">잉글리시 폭스하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed122" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed122" class="lab_checkbox">자이언트 슈나우저 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed123" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed123" class="lab_checkbox">저먼 셰퍼드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed124" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed124" class="lab_checkbox">차우차우 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed125" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed125" class="lab_checkbox">카네 코르소 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed126" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed126" class="lab_checkbox">티베탄 마스티프 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed127" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed127" class="lab_checkbox">파라오 하운드 <span class="filter_item_num">100</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetSizeBreed" id="filterPetSizeBreed128" class="inp_blind" hidden>
+                                    <label for="filterPetSizeBreed128" class="lab_checkbox">포인터 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="tab-panel03" class="tab_panel filter_cate_container" role="tabpanel">
+                        <div class="filter_cate_box show">
+                            <div class="filter_cate_header">
+                                전체 <span class="filter_item_num">1,234</span>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetAge" id="filterPetAge01" class="inp_blind" hidden>
+                                    <label for="filterPetAge01" class="lab_checkbox">퍼피(1살 미만) <span class="filter_item_num">500</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetAge" id="filterPetAge02" class="inp_blind" hidden>
+                                    <label for="filterPetAge02" class="lab_checkbox">어덜트(1살 이상 ~ 7살 이하) <span class="filter_item_num">234</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetAge" id="filterPetAge03" class="inp_blind" hidden>
+                                    <label for="filterPetAge03" class="lab_checkbox">시니어(7살 이상) <span class="filter_item_num">500</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab-panel04" class="tab_panel filter_cate_container" role="tabpanel">
+                        <div class="filter_cate_box show">
+                            <div class="filter_cate_header">
+                                산책·외출 <span class="filter_item_num">1,234</span>
+                            </div>
+                            <ul class="filter_cate_small_box">
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate01" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate01" class="lab_checkbox">하네스/가슴줄/목줄/리드줄 <span class="filter_item_num">500</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate02" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate02" class="lab_checkbox">인식표/목걸이 <span class="filter_item_num">234</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate03" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate03" class="lab_checkbox">산책용품 <span class="filter_item_num">400</span></label>
+                                </li>
+                                <li class="filter_cate_small">
+                                    <input type="checkbox" name="filterPetItemCate" id="filterPetItemCate04" class="inp_blind" hidden>
+                                    <label for="filterPetItemCate04" class="lab_checkbox">훈련용품 <span class="filter_item_num">100</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loading">
+                        <img src="/images/icon-load01.svg" alt="" class="icon_load">
+                    </div>
+                </div>
+                <div class="popup_bottom">
+                    <button class="btn btn_linkstyle btn_refresh"><img src="/images/icon-refresh-gray.svg" alt="refresh" class="icon"> <span class="filter-cate-js"></span> 재설정</button>
+                    <button type="button" class="btn btn_accent btn_half" id="btnShowItem">200개 상품보기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="js/header.js"></script> -->
+    <script src="js/search_filter.js"></script>
+    <script>
+        var swiper = new Swiper('.sect_filter_cate', {
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+            freeMode: true,
+        });
+
+        var elPopoverAll = document.querySelectorAll('.popover');
+
+        function showPopover(id) {
+            var elPopover = document.getElementById(id);
+
+            elPopover.classList.add(SHOW);
+            console.log(id);
+        }
+        function togglePopover(id) {
+            var elPopover = document.getElementById(id);
+
+            if(elPopover.classList.contains(SHOW)){
+                elPopover.classList.remove(SHOW);
+            } else if(!elPopover.classList.contains(SHOW)){
+                elPopover.classList.add(SHOW);
+            }
+        }
+        document.getElementById('popupWrap').addEventListener('click',function(e){
+            if(e.target === this){
+                elTabPanelAll.forEach(function(el){
+                    if(el.classList.contains(SHOW)){
+                        closeFilterPopup(el);
+                    }
+                });
+            };
+        });
+
+    </script>
+     <script
+     src="https://code.jquery.com/jquery-3.5.0.min.js"
+     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+     crossorigin="anonymous"></script>
+     <script src="js/btn_top.js"></script>
+</body>
+</html>

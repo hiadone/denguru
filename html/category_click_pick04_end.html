@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 기획전</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header07">
+            <h1 class="blind">기획전 제목</h1>
+            <a href="javascript:document.referrer? history.back() : location.href = 'category_main.html'" class="btn_goback"><img src="/images/icon-goback-circle.svg" alt="뒤로가기" class="icon"></a>
+        </header>
+        <div class="main">
+            <div class="img_box"><img src="/images/tiw333a1207_event_01.jpg" alt="예시배너" class="img"></div>
+            <div class="event_post_content_wrap">
+                <h2 class="title06">당첨자 발표</h2>
+                <div class="post_content_article02">
+                    <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                    <p>내는 있는 그들은 끓는 같이, 일월과 위하여 피는 피가 힘있다. </p>
+                    <p>희망의 품었기 시들어 따뜻한 것은 든 말이다.</p>
+                    <p>바로 그들은 뼈 청춘을 산야에 시들어 같지 기쁘며, 있으랴? 뜨고, 간에 힘차게 칼이다. </p>
+                    <p><br></p>
+                    <p>당첨자</p>
+                    <p>emai****@email.com</p>
+                    <p>emai****@email.com</p>
+                    <p>emai****@email.com</p>
+                    <p>emai****@email.com</p>
+                    <p>emai****@email.com</p>
+                </div>
+            </div>
+            <div class="reply_container">
+                <h2 class="title06">댓글</h2>
+                <div class="reply_list_container">
+                    <ul class="reply_list">
+                        <li class="reply_box">
+                            <div class="reply_info">
+                                <div class="reply_user">닉네임</div>
+                                <div class="reply_date">2020-03-26</div>
+                            </div>
+                            <div class="reply_post">
+                                댓글 내용 TEXT
+                            </div>
+                            <div class="reply_btn_box btn_box">
+                                <div class="btn_left">
+                                    <button class="btn btn_linkstyle">신고</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reply_box">
+                            <div class="reply_info">
+                                <div class="reply_user">닉네임</div>
+                                <div class="reply_date">2020-03-26</div>
+                            </div>
+                            <div class="reply_post">
+                                <img src="/images/icon-lock.svg" alt="잠금아이콘" class="icon"> 비밀댓글입니다
+                            </div>
+                        </li>
+                        <li class="reply_box">
+                            <div class="reply_info">
+                                <div class="reply_user">닉네임</div>
+                                <div class="reply_date">2020-03-26</div>
+                            </div>
+                            <div class="reply_post">
+                                <img src="/images/icon-lock.svg" alt="잠금아이콘" class="icon"> 내가 쓴 댓글 내용 TEXT 댓글 내용 TEXT 댓글 내용 TEXT 댓글 내용 TEXT 댓글 내용 TEXT댓글 내용 TEXT
+                            </div>
+                            <div class="reply_btn_box btn_box">
+                                <div class="btn_right">
+                                    <button class="btn btn_linkstyle">삭제</button>
+                                    <button class="btn btn_linkstyle">수정</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reply_box">
+                            <div class="reply_info">
+                                <div class="reply_user">로이</div>
+                                <div class="reply_date">2020-03-26</div>
+                            </div>
+                            <div class="reply_post">
+                                abcd124
+                            </div>
+                            <div class="reply_btn_box btn_box">
+                                <div class="btn_left">
+                                    <button class="btn btn_linkstyle">신고</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reply_box">
+                            <div class="reply_info">
+                                <div class="reply_user">닉네임</div>
+                                <div class="reply_date">2020-03-26</div>
+                            </div>
+                            <div class="reply_post">
+                                efgg321
+                            </div>
+                            <div class="reply_btn_box btn_box">
+                                <div class="btn_left">
+                                    <button class="btn btn_linkstyle">신고</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pagination01">
+                        <li class="page disabled"><a href="" class="page_link"><img src="/images/icon-pagination-before.svg" alt="이전페이지" class="icon"></a></li>
+                        <li class="page active"><a href="" class="page_link">1</a></li>
+                        <li class="page"><a href="" class="page_link">2</a></li>
+                        <li class="page"><a href="" class="page_link">3</a></li>
+                        <li class="page"><a href="" class="page_link">4</a></li>
+                        <li class="page"><a href="" class="page_link"><img src="/images/icon-pagination-after.svg" alt="다음페이지" class="icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="img_box"><img src="/images/tiw333a1207_event_02.jpg" alt="예시 유의사항" class="img"></div>
+
+        </div>
+
+    </div>
+    <script>
+        //
+        var elPopupWrap = document.querySelector('.popup_wrap');
+        var SHOW = 'show';
+
+        function openPopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.add(SHOW);
+            elPopupContainer.classList.add(SHOW);
+        }
+        function closePopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.remove(SHOW);
+            elPopupContainer.classList.remove(SHOW);
+        }
+        //
+        
+
+        //
+        function resizeTextarea(obj) {
+            obj.style.height = "1px";
+            obj.style.height = (8+obj.scrollHeight)+"px";
+        }
+
+       
+        //
+        var elBtnDelReviewImg = document.querySelectorAll('.btn_del_img');
+
+        elBtnDelReviewImg.forEach(function(el){
+            el.addEventListener('click', function(){
+                var elDelete = this.parentNode;
+                elDelete.parentNode.removeChild(elDelete);
+            });
+        });
+    </script>
+</body>
+</html>

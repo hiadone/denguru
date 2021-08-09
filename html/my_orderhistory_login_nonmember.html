@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 주문내역조회</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header04">
+            <h1 class="h_title">주문내역조회</h1>
+            <a href="javascript:document.referrer? history.back() : location.href = 'my_orderhistory_login.html'" class="btn_goback h_btn_icon"><img src="/images/icon-goback.svg" alt="뒤로가기" class="icon"></a>
+            <button class="btn_linkstyle h_btn_icon h_btn_right btn_right"><img src="/images/icon-call.svg" alt="전화걸기" class="icon"></button>
+            <button class="btn_linkstyle h_btn_icon h_btn_right"><img src="/images/icon-trash-header.svg" alt="주문내역 삭제" class="icon"></button>
+        </header>
+
+        <div class="main">
+            <div class="pd_header04"></div>
+            <div class="top_order_number_box">
+                <div class="order_number">
+                    주문번호
+                    <span class="number">2019101012345689-12345678</span>
+                </div>
+                <div class="copy_order_number">
+                    <button type="button" onclick="showToast('toast01')" class="btn_copy_order_number btn_linkstyle btn_linkstyle_main">복 사</button>
+                </div>
+            </div>
+
+            <div class="order_history_container">
+                <div class="tab_nav02">
+                    <a href="my_orderhistory_login.html" class="tab_nav_link"><span>회원주문</span></a>
+                    <a href="my_orderhistory_login_nonmember.html" class="tab_nav_link active"><span>비회원주문</span></a>
+                </div>
+                <div class="order_history_login_container">
+                    <div class="order_history_login_announce txt_center">
+                        <div class="logo_order_shop"><img src="http://placehold.it/64x64" alt="스토어 로고" class="img"></div>
+                        <div class="order_login_announce_txt01">
+                            (스토어명) 회원이 아니신가요?
+                        </div>
+                        <div class="order_login_announce_txt02">비회원 주문정보는 해당 스토어의<br>주문페이지에서 확인할 수 있습니다.</div>
+                    </div>
+                    <div class="order_history_login_form members_form_contianer members_contianer">
+                        <div class="btn_box">
+                            <a href="" id="btnLogin" class="btn btn_full btn_main">(스토어명) 주문페이지로 이동</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast_box" id="toast01">
+            <div>
+                주문번호가 복사되었습니다.<br>붙여넣기해서 사용하세요.
+            </div>
+        </div>
+    </div>
+    <script>
+        var SHOW ='show';
+        var removeToast;
+
+        function showToast(id){
+            var elToast = document.getElementById(id);
+
+            if(elToast.classList.contains(SHOW)){
+                clearTimeout(removeToast), removeToast = setTimeout(function () {
+                    document.getElementById(id).classList.remove(SHOW);
+                }, 1000)
+            } else {
+                removeToast = setTimeout(function () {
+                    document.getElementById(id).classList.remove(SHOW);
+                }, 2000);
+            }
+
+            elToast.classList.add(SHOW);
+            document.querySelectorAll('button').forEach(function(el){
+                el.blur();
+            });
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보수정</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">회원정보수정</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'my_edit_input_pw.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="members_join_form">
+                <div class="join_form_container">
+                    <form onsubmit="return false;">
+                        <div class="join_form_txt_container">
+                            <div class="inp_box04">
+                                <div class="inp_txt_box" style="margin-top: 0;">
+                                    <label for="joinEmail" class="lab_txt">이메일</label>
+                                    <input type="email"" class="inp_txt js-input" id="joinEmail" value="denguru@gmail.com" label="이메일" readonly>
+                                </div>
+                                <div class="txt_right inp_message"></div>
+                            </div>
+                            <div class="inp_box04">
+                                <div class="inp_txt_box">
+                                    <label for="joinPassword" class="lab_txt">현재 비밀번호</label>
+                                    <input type="password" class="inp_txt js-input" id="joinPassword" label="현재 비밀번호">
+                                    <button type="button" class="btn_inp_txt btn_linkstyle js-btn-passoword-toggle"><img src="/images/icon-eye.svg" alt="" class="icon"></button>
+                                </div>
+                                <div class="txt_right inp_message">
+                                    현재 비밀번호를 입력해주세요
+                                </div>
+                            </div>
+                            <div class="inp_box04">
+                                <div class="inp_txt_box">
+                                    <label for="newPassword" class="lab_txt">새 비밀번호</label>
+                                    <input type="password" class="inp_txt js-input" id="newPassword" label="새 비밀번호">
+                                    <button type="button" class="btn_inp_txt btn_linkstyle js-btn-passoword-toggle"><img src="/images/icon-eye.svg" alt="" class="icon"></button>
+                                </div>
+                                <div class="txt_right inp_message">
+                                    새 비밀번호를 입력해주세요
+                                </div>
+                            </div>
+                            <div class="inp_box04">
+                                <div class="inp_txt_box">
+                                    <label for="newPasswordCheck" class="lab_txt">새 비밀번호 확인</label>
+                                    <input type="password" class="inp_txt js-input" id="newPasswordCheck" label="새 비밀번호 확인" disabled>
+                                    <button type="button" class="btn_inp_txt btn_linkstyle js-btn-passoword-toggle"><img src="/images/icon-eye.svg" alt="" class="icon"></button>
+                                </div>
+                                <div class="txt_right inp_message">
+                                    새 비밀번호를 다시 입력해주세요
+                                </div>
+                            </div>
+                            <div class="inp_box04">
+                                <div class="inp_txt_box">
+                                    <label for="joinName" class="lab_txt">이름</label>
+                                    <input type="text" class="inp_txt js-input" id="joinName" label="이름" value="김댕댕">
+                                </div>
+                                <div class="txt_right inp_message"></div>
+                            </div>
+                            <div class="inp_box04">
+                                <div class="inp_txt_box">
+                                    <label for="joinNick" class="lab_txt">닉네임</label>
+                                    <input type="text" class="inp_txt js-input" id="joinNick" label="닉네임" value="댕구루깡">
+                                    <button type="button" class="btn_inp_txt btn_linkstyle_main btn_linkstyle" id="btnNickCheck">확 인</button>
+                                </div>
+                                <div class="txt_right inp_message"></div>
+                            </div>
+                            <div class="inp_box04">
+                                <div class="inp_txt_box js-box-nowtel">
+                                    <label for="nowTel" class="lab_txt">휴대폰번호</label>
+                                    <input type="tel" class="inp_txt js-input" id="nowTel" value="01012341234" readonly>
+                                    <button type="button" id="btnNowTel" class="btn_inp_txt btn_linkstyle btn_linkstyle_main">다른번호 인증</button>
+                                </div>
+                                <div class="inp_txt_box js-box-changetel disnone">
+                                    <label for="joinTel" class="lab_txt">휴대폰번호</label>
+                                    <input type="tel" class="inp_txt js-input" id="joinTel" placeholder="'-'없이 입력" label="휴대폰번호">
+                                    <button type="button" id="btnSendAuthenticationNumber" class="btn_inp_txt btn_linkstyle btn_linkstyle_main">인 증</button>
+                                </div>
+                                <div class="txt_right inp_message"></div>
+                            </div>
+                            <div class="inp_box04  inpbox_authentication_number disnone">
+                                <div class="inp_txt_box">
+                                    <label for="joinAuthenticationNumber" class="lab_txt">인증번호</label>
+                                    <input type="number" class="inp_txt js-input" id="joinAuthenticationNumber" label="인증번호">
+                                    <div class="authentication_time"></div>
+                                    <button type="button" id="btnCheckAuthenticationNumber" class="btn_inp_txt btn_linkstyle btn_linkstyle_main">확 인</button>
+                                </div>
+                                <div class="txt_right inp_message">인증번호 4자리를 입력해주세요</div>
+                            </div>
+                            <div class="inp_box04">
+                                <div class="inp_txt_box">
+                                    <label for="userBirth" class="lab_txt">생년월일</label>
+                                    <input type="text" class="inp_txt js-input" id="userBirth" label="생년월일" placeholder="19990101" label="생년월일">
+                                </div>
+                                <div class="txt_right inp_message"></div>
+                            </div>
+                            <div class="inp_box01">
+                                <div class="lab_box"><span class="lab_small">성별</span></div>
+                                <div class="radio_container02">
+                                    <div class="radio_box02">
+                                        <input type="radio" name="userGender" id="userBoy" class="inp_radio02 blind" >
+                                        <label for="userBoy" class="lab_radio02">남자</label>
+                                    </div>
+                                    <div class="radio_box02">
+                                        <input type="radio" name="userGender" id="userGirl" class="inp_radio02 blind">
+                                        <label for="userGirl" class="lab_radio02">여자</label>
+                                    </div>
+                                    <div class="radio_box02">
+                                        <input type="radio" name="userGender" id="userNoSelect" class="inp_radio02 blind" checked>
+                                        <label for="userNoSelect" class="lab_radio02">선택안함</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="btn_box btn_join_success">
+                            <button id="btnJoinSubmit" type="submit" class="btn btn_full btn_main" onclick="confirm('수정한 내용을 저장하시겠습니까?')?location.href = 'my_main_resister.html': null">수정완료</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script:src -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- script -->
+    <script>
+        // 비밀번호 보이기/가리기
+        $('.js-btn-passoword-toggle').on('touchstart',function(){
+            $(this).prev('.js-input').attr('type','text');
+        });
+        $('.js-btn-passoword-toggle').on('touchend',function(){
+            $(this).prev('.js-input').attr('type','password');
+        });
+
+        //inp 아이디
+        var JOIN_NICK = 'joinNick';
+        var JOIN_EMAIL = 'joinEmail';
+        var JOIN_PW = 'joinPassword';
+        var NEW_PW = 'newPassword';
+        var NEW_PWCHECK = 'newPasswordCheck';
+        var JOIN_TEL = 'joinTel';
+        var JOIN_ATHNT_NUMBER = 'joinAuthenticationNumber';
+        var USER_BIRTH = 'userBirth';
+
+        var $joinNick = $('#' + JOIN_NICK);
+        var $joinEmail = $('#' + JOIN_EMAIL);
+        var $joinPw = $('#' + JOIN_PW);
+        var $newPw = $('#' + NEW_PW);
+        var $newPwCheck = $('#' + NEW_PWCHECK);
+        var $joinTel = $('#' + JOIN_TEL);
+        var $joinAthntNumber = $('#' + JOIN_ATHNT_NUMBER);
+        var $userBirth = $('#' + USER_BIRTH);
+
+        //class
+        var CLASS_WARN = 'inp_txt_box_warn';
+        var CLASS_PRIMARY = 'inp_txt_box_primary';
+
+        //timer
+        var timerTime = 300;
+        var timerMinutes = '';
+        var timerSeconds = '';
+        var timerSecondsShow = '';
+
+        function getPostWord(str,firstVal,secondVal) {
+            try {
+                var lastStr = str[str.length-1].charCodeAt(0);
+                // 한글의 제일 처음과 끝의 범위밖일 경우는 오류
+                if(lastStr < 0xAC00 || lastStr > 0xD7A3) {
+                    return str;
+                }
+                var lastCharIndex = (lastStr - 0xAC00) % 28;
+                // 종성인덱스가 0이상일 경우는 받침이 있는경우이며 그렇지 않은경우는 받침이 없는 경우
+                if(lastCharIndex > 0) {
+                    // 받침이 있는경우
+                    // 조사가 '로'인경우 'ㄹ'받침으로 끝나는 경우는 '로' 나머지 경우는 '으로'
+                    if(firstVal === "으로" && lastCharIndex === 8)
+                        str += secondVal;
+                    else
+                        str += firstVal;
+                } else {
+                    // 받침이 없는 경우
+                    str += secondVal;
+                }
+            } catch(e) {
+                console.error(e);
+            }
+
+            return str;
+        }
+        // firstVal :: 으로 / 을 / 이 / 은 / 과
+        // secondVal :: 로 / 를 / 가 / 는 / 와
+
+        //폼유효성검사 정규표현식
+        var empJ = /\s/g;   //모든 공백 체크 정규식
+        var idJ = /^(?=.*[A-Za-z])[A-Za-z0-9]{6,16}$/;   //아이디 정규식 = 영어 숫자 포함 6-16자
+        var nickJ = /[0-9]|[a-z]|[A-Z]|[가-힣]{2,10}$/; //닉네임 정규식 = 2~10자의 한글, 영문, 숫자만
+        var pwJ = /^(?=.*[0-9])(?=.*[A-Za-z])[A-Za-z0-9]{6,20}$/;    // 비밀번호 정규식 = 영어 숫자 반드시 포함 6자 이상
+
+        var nameJ = /^[가-힣]{2,6}$/;   // 이름 정규식 = 한글 2-6자
+        var mailJ = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;     // 이메일 검사 정규식 = ooooo@oooo.ooo
+        var phoneJ = /^01([0|1|6|7|8|9]?)?([0-9]{3,4})?([0-9]{4})$/;   // 휴대폰 번호 정규식 01xxxxxxxxx
+        var authenticationNumberJ = /^[0-9]{4}$/;
+        var birthJ = /^(19[0-9][0-9]|20\d{2})(0[0-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])$/
+        
+        //에러메세지 모음
+        var ERROR_MSG = {
+            nickUnavailable: '사용불가능한 닉네임입니다.',
+            passwordDifferentCheck: '현재 비밀번호와 같은 비밀번호는 사용할수 없습니다.',
+            passwordForm:  '비밀번호는 영문, 숫자 혼합하여 6자 이상이어야 합니다.',
+            passwordReCheck: '비밀번호가 일치하지 않습니다',
+            emailForm: '이메일 형식이 올바르지 않습니다',
+            emailUnavailable: '사용불가능한 이메일입니다.',
+            telForm: '휴대폰번호를 다시 확인해주십시오.',
+            authenticationNumberForm: '인증번호가 일치하지 않습니다',
+            birthForm : '태어난 날짜를 정확하게 입력해주세요',
+        }
+
+        var PRIMARY_MSG = {
+            nickAvailable: '사용가능한 닉네임 입니다.',
+            emailAvailable: '사용가능한 이메일입니다.',
+            telAvailable: '인증번호를 발송했습니다.',
+            authenticationNumberForm: '인증번호가 확인되었습니다',
+        }
+
+        // 값이 없을때 메세지 return
+        function zeroMsg(el){
+            var inpLabel = el.attr('label');
+            var msg = getPostWord(inpLabel,'을','를') + ' 입력해주세요';
+
+            return msg;
+        }
+
+        //인풋의 에러 스타일 추가
+        function addErrorStyle(el,msg){
+            el.parent('.inp_txt_box').next('.inp_message').text(msg);
+            el.parent('.inp_txt_box').addClass(CLASS_WARN);
+            el.parent('.inp_txt_box').removeClass(CLASS_PRIMARY);
+        }
+        //인풋의 에러 스타일 제거 
+        function removeErrorStyle(el,msg){
+            el.parent('.inp_txt_box').next('.inp_message').text(msg);
+            el.parent('.inp_txt_box').addClass(CLASS_PRIMARY);
+            el.parent('.inp_txt_box').removeClass(CLASS_WARN);
+        }
+        //setInterval(함수, 시간) : 주기적인 실행
+        function timerAthntNumber () {
+            var x = setInterval(function() {
+                //parseInt() : 정수를 반환
+                timerMinutes = parseInt(timerTime/60); //몫을 계산
+                timerSeconds = timerTime%60; //나머지를 계산
+
+                timerSeconds < 10? timerSecondsShow = '0' + timerSeconds : timerSecondsShow = timerSeconds;
+
+                $('.authentication_time').text(timerMinutes + ":" + timerSecondsShow);
+                
+                timerTime--;
+                // console.log(timerSecondsShow,'and',timerSeconds);
+
+                //타임아웃 시
+                if (timerTime < 0) {
+                    clearInterval(x); //setInterval() 실행을 끝냄
+                }
+            }, 1000);
+        }
+        // [다른번호 인증] 클릭시 
+        $('#btnNowTel').on('click',function(){
+            $('.js-box-nowtel').addClass('disnone');
+            $('.js-box-changetel').removeClass('disnone');
+        });
+        //[인증]버튼 클릭시 인증번호 입력창 보이기 
+        $('#btnSendAuthenticationNumber').on('click',function(){
+            var inpValue = $.trim($joinTel.val());
+
+            if(!inpValue){ // 값이 없을 때 
+                addErrorStyle($joinTel, zeroMsg($joinTel));
+                return false;
+            } else { // 값이 있을때
+                if(!phoneJ.test(inpValue)) {
+                    addErrorStyle($joinTel, ERROR_MSG.telForm);
+                    return false;
+                } else if(phoneJ.test(inpValue)) {
+                    removeErrorStyle($joinTel, PRIMARY_MSG.telAvailable);
+                    $('.inpbox_authentication_number').removeClass('disnone');
+                    $(this).text('재전송');
+                    $joinAthntNumber.focus();
+                    timerAthntNumber();
+                    $('#btnSendAuthenticationNumber').off('click');
+                    return true;
+                }
+            }
+        });
+        //인증번호 확인
+        $('#btnCheckAuthenticationNumber').on('click',function(){
+            var inpValue = $.trim($joinAthntNumber.val());
+
+            if(!inpValue){ // 값이 없을 때 
+                addErrorStyle($joinAthntNumber, zeroMsg($joinAthntNumber));
+                return false;
+            } else { // 값이 있을때
+                if(!authenticationNumberJ.test(inpValue)) {
+                    addErrorStyle($joinAthntNumber, ERROR_MSG.authenticationNumberForm);
+                    return false;
+                } else if(authenticationNumberJ.test(inpValue)) {
+                    removeErrorStyle($joinAthntNumber, PRIMARY_MSG.authenticationNumberForm);
+                    $('.inpbox_authentication_number').removeClass('vis_hidden ');
+                    $joinAthntNumber.focus();
+                    $('.authentication_time').remove();
+                    $joinAthntNumber.blur();
+                    return true;
+                }
+            }
+        });
+        // 유효성 검사 후 메세지 return
+        function checkValidation(el, regex, msgError, msgSuccess){
+            var inpValue = $.trim(el.val());
+
+            if(!inpValue){ // 값이 없을 때 
+                addErrorStyle(el, zeroMsg(el));
+                return false;
+            } else { // 값이 있을때
+                if(!regex.test(inpValue)) {
+                    addErrorStyle(el, msgError);
+                    return false;
+                } else if(regex.test(inpValue)) {
+                    removeErrorStyle(el, msgSuccess);
+                    return true;
+                }
+            }
+        };
+        function checkValidation02(el, regex, msgError, msgSuccess) {
+            var inpValue = $.trim(el.val());
+            
+            if(!inpValue){ // 값이 없을 때 
+                return false;
+            } else { // 값이 있을때
+                if(!regex.test(inpValue)) {
+                    addErrorStyle(el, msgError);
+                    return false;
+                } else if(regex.test(inpValue)) {
+                    removeErrorStyle(el, msgSuccess);
+                    return true;
+                }
+            }
+        }
+         // 비밀번호 확인 
+         function checkNEWPWCHECK(){
+            var PWValue = $.trim($newPw.val());
+            var PWCHECKValue = $.trim($newPwCheck.val());
+
+            if(!PWCHECKValue){
+                return false;
+                // addErrorStyle($newPwCheck,zeroMsg($newPwCheck));
+            } else if (PWValue !== PWCHECKValue) {
+                addErrorStyle($newPwCheck,ERROR_MSG.passwordReCheck,'');
+            } else {
+                removeErrorStyle($newPwCheck,'');
+            }
+        }
+        // 패스워드 확인 && disabled
+        function checkNEWPW(){
+            var joinPWValue = $.trim($joinPw.val());
+            var newPWValue = $.trim($newPw.val());
+            var isPassVal = checkValidation02($newPw,pwJ,ERROR_MSG.passwordForm,'');
+
+            if(!newPWValue) {
+                return false;
+                // addErrorStyle($newPw,zeroMsg($newPw));
+            } else if (joinPWValue === newPWValue) {
+                addErrorStyle($newPw,ERROR_MSG.passwordDifferentCheck);
+            } else if(isPassVal){
+                $newPwCheck.attr('disabled',false);
+                $newPwCheck.focus();
+            } else {
+                $newPwCheck.attr('disabled',true).val('');
+            }
+        }
+
+        $newPw.on('blur',function(){
+            checkNEWPW();
+        });
+        $newPwCheck.on('blur',function(){
+            checkNEWPWCHECK();
+        });
+
+        
+        // 닉네임 체크 
+        $('#btnNickCheck').on('click',function(){
+            checkValidation($joinNick,nickJ,ERROR_MSG.nickUnavailable, PRIMARY_MSG.nickAvailable);
+        });
+        //생년월일 폼 확인 
+        $userBirth.on('blur',function(){
+            var birthValue = $.trim($userBirth.val());
+
+            if(!birthValue){ // 값이 없을 때 
+                return false;
+            } else { // 값이 있을때
+                if(!birthJ.test(birthValue)) {
+                    addErrorStyle($userBirth, ERROR_MSG.birthForm);
+                    return false;
+                } else if(birthJ.test(birthValue)) {
+                    removeErrorStyle($userBirth, '');
+                    return true;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

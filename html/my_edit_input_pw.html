@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보수정</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">회원정보수정</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'my_setting.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="members_join_form">
+                <h2 class="title06">비밀번호 재확인</h2>
+                <div class="paragraph02 sub_txt">
+                    회원님의 정보를 안전하게 보호하기 위해 비밀번호를 다시 한 번 확인해주세요
+                </div>
+                <div class="join_form_container">
+                    <form onsubmit="return false;">
+                        <div class="join_form_txt_container">
+                            <div class="inp_box04">
+                                <div class="inp_txt_box">
+                                    <label for="joinEmail" class="lab_txt">이메일</label>
+                                    <input type="email" class="inp_txt js-input" id="joinEmail" value="denguru@gmail.com" label="이메일" readonly>
+                                </div>
+                            </div>
+                            <div class="inp_box04">
+                                <div class="inp_txt_box">
+                                    <label for="joinPassword" class="lab_txt">비밀번호</label>
+                                    <input type="password" class="inp_txt js-input" id="joinPassword" label="비밀번호">
+                                    <button type="button" class="btn_inp_txt btn_linkstyle js-btn-passoword-toggle"><img src="/images/icon-eye.svg" alt="" class="icon"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_box btn_join_success">
+                            <button id="btnJoinSubmit" type="submit" class="btn btn_full btn_normal btn_disabled" disabled onclick="clickBtnSubmit()">확인</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script:src -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- script -->
+    <script>
+        // 비밀번호 보이기/가리기
+        $('.js-btn-passoword-toggle').on('touchstart',function(){
+            $(this).prev('.js-input').attr('type','text');
+        });
+        $('.js-btn-passoword-toggle').on('touchend',function(){
+            $(this).prev('.js-input').attr('type','password');
+        });
+        
+        // 비밀번호 입력시 확인 버튼활성화 하기
+        function btnEnable(){
+            var hasPW = $('#joinPassword').val();
+            // 버튼 disabled toggle
+            if(hasPW){
+                $('#btnJoinSubmit').attr('disabled',false);
+                $('#btnJoinSubmit').removeClass('btn_disabled btn_normal');
+                $('#btnJoinSubmit').addClass('btn_main');
+            } else {
+                $('#btnJoinSubmit').attr('disabled',true);
+                $('#btnJoinSubmit').addClass('btn_disabled btn_normal');
+                $('#btnJoinSubmit').removeClass('btn_main');
+            }
+        }
+        $('#joinPassword').on('input',function(){
+            btnEnable();
+        });
+        
+        function clickBtnSubmit(){
+            var valPw = $('#joinPassword').val();
+            
+            if(valPw.length < 6) {
+                alert('비밀번호를 정확히 입력해주세요');
+                return false;
+            } else {
+                location.href = 'my_edit_info_form.html'
+            }
+        }
+    </script>
+</body>
+</html>

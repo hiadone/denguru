@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: PICK</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03 header03_white">
+            <h1 class="h_title">상품선택</h1>
+            <div class="btn_box">
+                <!-- <a href="javascript:document.referrer? history.back() : location.href = 'pick_main'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback.svg" alt="이전페이지" class="icon">
+                </a> -->
+                <a href="javascript:document.referrer? history.back() : location.href = 'pick_main.html'" class="btn btn_linkstyle_main btn_right btn_submit">완 료</a>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="pd_header03"></div>
+            <div class="pick_title_box">
+                <h2 class="title08">PICK</h2>
+            </div>
+            <div class="nav_bottom_edit_pick">
+                <h2 class="blind">찜아이템 편집바</h2>
+                <ul class="nav_list">
+                    <li class="nav_item active">
+                        <button type="button" class="btn_linkstyle nav_link js-btn-check-all">
+                            <img src="/images/nav-checkbox.svg" alt="전체선택" class="nav_icon">
+                            <span class="nav_txt">전체선택</span>
+                        </button>
+                    </li>
+                    <li class="nav_item nav_disabled">
+                        <button type="button" class="btn_linkstyle nav_link js-nav-control-disabled" disabled onclick="clickPrepend ();">
+                            <img src="/images/nav-gotop.svg" alt="맨위로" class="nav_icon">
+                            <span class="nav_txt">맨위로</span>
+                        </button>
+                    </li>
+                    <li class="nav_item nav_disabled">
+                        <button type="button" class="btn_linkstyle nav_link js-nav-control-disabled" disabled onclick="clickAppend ()">
+                            <img src="/images/nav-gobottom.svg" alt="맨아래로" class="nav_icon">
+                            <span class="nav_txt">맨아래로</span>
+                        </button>
+                    </li>
+                    <li class="nav_item nav_disabled">
+                        <button type="button" class="btn_linkstyle nav_link js-nav-control-disabled" disabled onclick="openPopup('delItemLike')">
+                            <img src="/images/nav-delete.svg" alt="삭제" class="nav_icon">
+                            <span class="nav_txt">삭제</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="pick_items_wrap pick_edit_items_wrap">
+                <h2 class="title07">찜한 아이템 <span class="emph_color_main js-item-num">12</span></h2>
+                <div class="items_wrap">
+                    <ul class="item_list03 js-pick-box">
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">딩동펫</div>
+                                <div class="item_name">반려동물 강아지 테니스볼 스낵장난감</div>
+                                <div class="item_price">27,720 <span class="rate_discount">28%</span></div>
+                                <div class="item_price_before">38,550</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem01" id="pickItem01" class="blind inp_check js-pick-check">
+                                <label for="pickItem01" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">벨벳마이뷰</div>
+                                <div class="item_name">벨벳 마이뷰 강아지 종합영양제 300ml</div>
+                                <div class="item_price">13,900</div>
+                                
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem02" id="pickItem02" class="blind inp_check js-pick-check">
+                                <label for="pickItem02" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">청인</div>
+                                <div class="item_name"> 프로바이오틱스 유산균 강아지영양제</div>
+                                <div class="item_price">11,000</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem03" id="pickItem03" class="blind inp_check js-pick-check">
+                                <label for="pickItem03" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">버박</div>
+                                <div class="item_name">버박뉴트리플러스겔 120.5g 1p 강아지영양제 반려동물</div>
+                                <div class="item_price">26,680</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem04" id="pickItem04" class="blind inp_check js-pick-check">
+                                <label for="pickItem04" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">더플래</div>
+                                <div class="item_name">뉴트리플러스젠 장모 피부모질 강아지영양제 150g.뉴트리플러스젠</div>
+                                <div class="item_price">11,400</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem05" id="pickItem05" class="blind inp_check js-pick-check">
+                                <label for="pickItem05" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">닥터바이</div>
+                                <div class="item_name">조인트 3개월 강아지 고양이 관절 영양제 특허소재</div>
+                                <div class="item_price">94,000</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem06" id="pickItem06" class="blind inp_check js-pick-check">
+                                <label for="pickItem06" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">데이스포</div>
+                                <div class="item_name">데이스포 스킨앤코트 피부영양제 250g 1p 강아지영양</div>
+                                <div class="item_price">19,590</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem07" id="pickItem07" class="blind inp_check js-pick-check">
+                                <label for="pickItem07" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">인트라젠</div>
+                                <div class="item_name">인트라젠 플러스 영양제 60g (2g x 30p)</div>
+                                <div class="item_price">7,200</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem08" id="pickItem08" class="blind inp_check js-pick-check">
+                                <label for="pickItem08" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">닥터캐닌</div>
+                                <div class="item_name">유기농 강아지기침호흡기영양제 로가닉브레스 90g</div>
+                                <div class="item_price">48,000 <span class="rate_discount">20%</span></div>
+                                <div class="item_price_before">60,000</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem09" id="pickItem09" class="blind inp_check js-pick-check">
+                                <label for="pickItem09" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">마이뷰</div>
+                                <div class="item_name">강아지 종합영양제 300ml -종류선택</div>
+                                <div class="item_price">17,390</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem10" id="pickItem10" class="blind inp_check js-pick-check">
+                                <label for="pickItem10" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">Vets</div>
+                                <div class="item_name">베츠 닥터퓌레 조인트케어 강아지 관절영양제</div>
+                                <div class="item_price">15,400</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem11" id="pickItem11" class="blind inp_check js-pick-check">
+                                <label for="pickItem11" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                        <li class="item_box">
+                            <div class="item_thum">
+                                <img src="http://placehold.it/120x120" alt="상품이미지" class="img">
+                            </div>
+                            <div class="item_txt_box">
+                                <div class="item_shop">닥터바이</div>
+                                <div class="item_name">닥터바이 조인트 슬개골 탈구 영양제 80g</div>
+                                <div class="item_price">23,900</div>
+                            </div>
+                            <div class="pick_inp_check_box">
+                                <input type="checkbox" name="pickItem12" id="pickItem12" class="blind inp_check js-pick-check">
+                                <label for="pickItem12" class="lab_check js-lab-check"><span class="blind">상품선택</span></label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pd_edit_pick_gostore" style="height: 36px; background-color: #fff;"></div>
+            <div class="btn_fixed_box">
+                <button type="button" class="btn btn_circle btn_normal_line btn_write btn-top" id="btnTop"><img src="/images/icon-backtop.svg" alt="맨위로" class="icon icon_up"></button>
+            </div>
+        </div>
+        <div class="popup_wrap">
+            <div class="popup_container popup_center" id="delItemLike">
+                <div class="popup_txt_box">
+                    <div class="popup_txt_main txt_center">찜한 아이템 삭제</div>
+                    <div class="popup_txt_sub txt_center">찜한 아이템을 정말로 삭제하시겠어요?</div>
+                </div>
+                <div class="popup_btn_box02">
+                    <button class="btn btn_half_popup btn_normal_line" onclick="closePopup('delItemLike')">취소</button>
+                    <button class="btn btn_half_popup btn_main btn_right" onclick="deleteItemLike();">삭 제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var elPopupWrap = document.querySelector('.popup_wrap');
+        var SHOW = 'show';
+
+        function openPopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.add(SHOW);
+            elPopupContainer.classList.add(SHOW);
+        }
+        function closePopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.remove(SHOW);
+            elPopupContainer.classList.remove(SHOW);
+        }
+
+
+        var elNavItemDisabeld = document.querySelectorAll('.js-nav-control-disabled');
+        var elLabCheck = document.querySelectorAll('.js-lab-check');
+        var elInpCheck = document.querySelectorAll('.js-pick-check');
+        var elBtnCheckAll = document.querySelector('.js-btn-check-all');
+        var elPickBox = document.querySelector('.js-pick-box');
+
+        var NAV_DISABLED = 'nav_disabled';
+
+        var checkFlag = 'false';
+
+        function navDisabled() {
+            elNavItemDisabeld.forEach(function(el){
+                el.parentNode.classList.add(NAV_DISABLED);
+                el.disabled = 'disabled';
+            });
+        }
+        function navActive() {
+            elNavItemDisabeld.forEach(function(el){
+                el.parentNode.classList.remove(NAV_DISABLED);
+                el.disabled = '';
+            });
+        }
+        function checkedInpToggle() {
+            var chk_leng = elInpCheck.length;
+            var checked = 0;
+            for (i=0; i < chk_leng; i++) {
+                if (elInpCheck[i].checked == true) {
+                    checked += 1;
+                }
+            }
+            if (checked === 0) {
+                navDisabled();
+                return;
+            } else if (checked > 0){
+                navActive();
+            }
+        }
+
+
+        function checkAll(field) {
+            if(checkFlag == 'false') {
+                for(i = 0; i < field.length; i++) {
+                    field[i].checked = true; // 모든 체크박스를 체크한다.
+                }
+                checkFlag = "true";
+                navActive();
+                return "전체 해제"; // 버튼객체의 value속성으로 반환(this.value.list로 넘겨져왔기 때문에)
+            } else {
+                for(i = 0; i < field.length; i++) {
+                    field[i].checked = false; // 모든 체크박스를 해제한다.
+                }
+                navDisabled();
+                checkFlag = "false";
+                return "전체 선택"; // 버튼객체의 vaule속성으로 반환
+            }
+        }
+        function clickAppend () {
+            elInpCheck.forEach(function(el){
+                var elChecked = el.checked;
+                var li = el.parentNode.parentNode;
+
+                if(elChecked) {
+                    elPickBox.appendChild(li);
+                }
+            });
+
+        }
+        function clickPrepend () {
+            elInpCheck.forEach(function(el){
+                var elChecked = el.checked;
+                var li = el.parentNode.parentNode;
+
+                if(elChecked) {
+                    elPickBox.prepend(li);
+                }
+            });
+        }
+        function deleteItemLike() {
+            elInpCheck.forEach(function(el){
+                var elChecked = el.checked;
+                var li = el.parentNode.parentNode;
+
+                if(elChecked) {
+                    li.remove();
+                }
+            });
+            document.querySelector('.js-item-num').innerHTML = document.querySelectorAll('.item_box').length;
+            closePopup('delItemLike');
+            navDisabled();
+        }
+
+        elInpCheck.forEach(function(el){
+            el.addEventListener('input',function(){
+                checkedInpToggle();
+            })
+        })
+
+        elBtnCheckAll.addEventListener('click',function(){
+            checkAll(elInpCheck);
+            this.blur();
+        });
+
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+    <script src="js/btn_top.js"></script>
+</body>
+</html>

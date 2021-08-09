@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENGURU:: 바잇미</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header05">
+            <h1 class="h_title">바잇미</h1>
+            <a href="javascript:document.referrer? history.back() : location.href = 'home_item_info.html'" class="btn_close">
+                <img src="/images/icon-close-page.svg" alt="현재창 닫기" class="icon">
+            </a>
+        </header>
+        <nav class="nav_gostore">
+            <h2 class="blind">스토어 네비게이션</h2>
+            <ul class="nav_list">
+                <li class="nav_item nav_disabled">
+                    <a href="" class="nav_link">
+                        <img class="nav_icon" src="/images/nav-go-before.svg" alt="뒤로가기">
+                    </a>
+                </li>
+                <li class="nav_item nav_disabled">
+                    <a href="" class="nav_link">
+                        <img class="nav_icon" src="/images/nav-go-after.svg" alt="앞으로가기">
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <img class="nav_icon" src="/images/nav-kakao.svg" alt="카카오톡으로 공유하기">
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <img class="nav_icon" src="/images/nav-heart.svg" alt="상품즐겨찾기">
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">
+                        <img class="nav_icon" src="/images/nav-star-o.svg" alt="스토어즐겨찾기 등록">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="pd_header05"></div>
+            <div class="h_load_bar_box js-load-bar show"><div class="h_load_bar"></div></div>
+            <div class="load_gostore_container js-load-gostore show">
+                <div class="load_img_container">
+                    <div>
+                        <div class="load_img_box img_box"><img src="/images/move_motion.gif" alt="페이지 이동중" class="img"></div>
+                        <div class="load_txt_box">
+                            <div class="txt01">
+                                <span class="emph">쇼핑몰</span>로 <span class="emph">이동 중</span>입니다
+                            </div>
+                            <div class="txt02">잠시만 기다려주세요</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="load_notice_container">
+                    <div>
+                        댕구루에서 제공하는 상품정보 및 가격은 <br>
+                        쇼핑몰과 일지하지 않을 수 있으니 <br>
+                        반드시 쇼핑몰에서 상품 및 가격정보를 확인해주세요. <br>
+                        댕구루는 통신판매중개업자로서 거래 당사자가 아니며<br>
+                        입점판매자가 등록한 상품, 거래정보및 거래에 대하여 <br>
+                        일체의 책임을 지지 않습니다.
+                    </div>
+                </div>
+            </div>
+            <!-- store -->
+            <div class="page_store js-page-store">
+                <div class="img_box">
+                    <img src="/images/capture-store.jpg" alt="스토어화면 예시" class="img">
+                </div>
+            </div>
+            <div class="pd_nav_gostore"></div>
+        </div>
+    </div>
+
+    <script>
+        var elLoadbarBox = document.querySelector('.js-load-bar');
+        var elLoadGostore = document.querySelector('.js-load-gostore');
+        var elPageStore = document.querySelector('.js-page-store');
+        
+        var SHOW = 'show';
+
+        setTimeout(function(){
+            elLoadbarBox.classList.remove(SHOW);
+            elLoadGostore.classList.remove(SHOW);
+            elPageStore.classList.add(SHOW);
+        },5000);
+
+
+
+    </script>
+</body>
+</html>

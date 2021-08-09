@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta property="og:image" content="http://dev.denguru.kr/assets/images/urlthum.png" />
+    <link rel="icon" href="/assets/images/favi.png">
+    <title>DENGURU 광고제휴문의</title>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="partners_write_container">
+        <h1 class="h_logo">
+            <img src="/assets/images/logo-horizontal.svg" alt="댕구루 로고" class="logo">
+        </h1>
+        <form id="partnersForm">
+            <div class="inp_box04">
+                <div class="inp_txt_box">
+                    <label for="partnersCompany" class="lab_txt">회사명 <span class="emph_color_accent">*</span></label>
+                    <input type="text" name="partnersCompany" class="inp_txt js-input js-inp-required" id="partnersCompany" label="회사명">
+                </div>
+            </div>
+            <div class="inp_box04">
+                <div class="inp_txt_box">
+                    <label for="partnersUrl" class="lab_txt">사이트 url <span class="emph_color_accent">*</span></label>
+                    <input type="url" name="partnersUrl" class="inp_txt js-input  js-inp-required" id="partnersUrl" label="사이트 url" placeholder="https://www.example.com">
+                </div>
+            </div>
+            <div class="inp_box04">
+                <div class="inp_txt_box">
+                    <label for="partnersName" class="lab_txt">담당자 <span class="emph_color_accent">*</span></label>
+                    <input type="text" name="partnersName" class="inp_txt js-input  js-inp-required" id="partnersName" label="담당자">
+                </div>
+            </div>
+            <div class="inp_box04">
+                <div class="inp_txt_box">
+                    <label for="partnersPhone" class="lab_txt">연락처 <span class="emph_color_accent">*</span></label>
+                    <input type="tel" name="partnersPhone" class="inp_txt js-input  js-inp-required" id="partnersPhone" label="연락처" placeholder="'-'없이 숫자만 입력">
+                </div>
+                <!-- <div class="inp_message">고객센터 1234-1234</div> -->
+            </div>
+            <div class="inp_box04">
+                <div class="inp_txt_box">
+                    <label for="partnersEmail" class="lab_txt">이메일 <span class="emph_color_accent">*</span></label>
+                    <input type="email" name="partnersEmail" class="inp_txt js-input  js-inp-required" id="partnersEmail" label="이메일" placeholder="partners@email.com">
+                </div>
+            </div>
+            <div class="inp_box02">
+                <div class="lab_box">
+                    <label for="partnersText" class="lab">문의내용 <span class="emph_color_accent">*</span></label>
+                </div>
+                <div class="inp_box">
+                    <textarea name="partnersText" id="partnersText" class="inp inp_textarea  js-inp-required" onkeydown="resizeTextarea(this)" onkeyup="resizeTextarea(this)" placeholder="문의내용을 상세히 적어주시면 더 정확한 응대가 가능합니다."></textarea>
+                </div>
+            </div>
+            <div class="inp_box04">
+                <div class="inp_box02" style="margin-bottom: 8px;">
+                    <div class="lab">
+                        파일첨부 <span class="emph_color_accent">*</span>
+                    </div>
+                </div>
+                <div class="inp_txt_box">
+                    <div class="lab_txt">사업자등록증 첨부</div>
+                    <div class="inp_txt js-filename"></div>
+                    <!-- <input type="text" name="partnersFile" id="" class="inp_txt js-filename" readonly> -->
+                    <input type="file" name="partnersFile01" class="inp_txt js-input js-inp-required js-partners-file blind" id="partnersFile01">
+                    <label for="partnersFile01" class="partners_btn btn_linkstyle btn_linkstyle_main btn_sm">
+                        <!-- <img src="/assets/images/icon-file.svg" alt="파일첨부 버튼" class="icon"> -->
+                        파일찾기
+                    </label>
+                </div>
+                <!-- <div class="txt_right inp_message js-txt-limit">
+                    최대용량 2MB 이내 파일만 등록하실 수 있습니다.
+                </div> -->
+            </div>
+            <div class="inp_box04">
+                <div class="inp_txt_box">
+                    <div class="lab_txt">통신판매업증 첨부</div>
+                    <div class="inp_txt js-filename"></div>
+                    <!-- <input type="text" name="partnersFile" id="" class="inp_txt js-filename" readonly> -->
+                    <input type="file" name="partnersFile02" class="inp_txt js-input js-inp-required js-partners-file blind" id="partnersFile02">
+                    <label for="partnersFile02" class="partners_btn btn_linkstyle btn_linkstyle_main btn_sm">
+                        <!-- <img src="/assets/images/icon-file.svg" alt="파일첨부 버튼" class="icon"> -->
+                        파일찾기
+                    </label>
+                </div>
+                <!-- <div class="txt_right inp_message js-txt-limit">
+                    최대용량 2MB 이내 파일만 등록하실 수 있습니다.
+                </div> -->
+            </div>
+            <div class="inp_box04" style="padding: 16px 0;">
+                <input type="checkbox" name="agree" id="agree" hidden class="inp_check" checked>
+                <label for="agree" class="lab_checkbox01">개인정보 수집 및 이용 동의</label>
+                <button class="partners_btn btn_sm btn_linkstyle btn_linkstyle_main" onclick="openPopup('popupAgree')">[내용보기]</button>
+            </div>
+            <div class="btn_box">
+                <button id="btnSubmit" type="submit" class="partners_btn btn_full btn_normal btn_disabled btn_right" disabled>확인</button>
+            </div>
+        </form>
+    </div>
+    <!-- popup -->
+    <div class="popup_wrap" id="popupWrap">
+        <div class="popup_container_agree" id="popupAgree">
+            <div class="popup_content">
+                <div class="popup_title01">
+                    광고제휴개인정보 처리방침
+                </div>
+                <div class="popup_title02">
+                    Ⅰ. 개인정보 처리방침 안내
+                </div>
+                <div class="popup_txt">
+                    <p>
+                        개인정보 처리방침이란, 이용자의 소중한 개인정보를 보호함으로써 이용자가 안심하고 서비스를 이용할 수 있도록 댕구루(이하 ‘회사’)가 준수해야 할 지침을 의미합니다.
+                    </p>
+                    <p>
+                        회사는 개인정보 처리방침의 작성, 게시, 이행과 관련하여, 정보통신서비스제공자가 준수하여야 하는 대한민국의 관계 법령 및 개인정보보호 규정, 가이드라인을 준수하고 있습니다.
+                    </p>
+                </div>
+                <div class="popup_title02">Ⅱ. 개인정보 처리방침 상세</div>
+                <div class="popup_title03">1. 개인정보의 처리 목적</div>
+                <div class="popup_txt">
+                    <p>
+                        (필수정보) 광고 비즈니스 이행을 위한 안내 및 고객 관리 목적
+                    </p>
+                    <p>
+                        회사는 광고 관련 정보전달을 위한 안내(광고 부킹 및 운영 관련 안내, 광고 상품 프로모션 안내, 고객 관리 등)를 위해 필요한 최소한의 개인정보를 수집하고 있습니다.
+                    </p>
+                </div>
+                <div class="popup_title03">
+                    2. 개인정보의 처리 및 보유 기간
+                </div>
+                <div class="popup_txt">
+                    <p>
+                        이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다.
+                    </p>
+                    <p>
+                        단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.
+                    </p>
+                </div>
+                <div class="popup_txt">
+                    <p>
+                        가. 회사 내부 방침에 의한 정보 보유 사유
+                    </p>
+                </div>
+                <div class="popup_table_container">
+                    <table class="popup_table">
+                        <tbody>
+                            <tr>
+                                <th class="popup_th">보관 정보</th>
+                                <th class="popup_th">보관 사유</th>
+                                <th class="popup_th">보관 기간</th>
+                            </tr>
+                            <tr>
+                                <td class="popup_td">
+                                    회사명, 사이트URL, 담당자이름, 연락처, 이메일, 사업자등록증, 통신판매업증, 고객센터번호 
+                                </td>
+                                <td class="popup_td">
+                                    스토어 사업자 식별, 서비스 이용계약의 체결, 사업자 자격유지,관리, 서비스부정이용 방지, 광고 부킹 및 운영 관련 안내,광고 상품 프로모션 안내, 이용고지 및 통지 연락 목적
+                                </td>
+                                <td class="popup_td">
+                                    이용계약 종료시까지. 단, 관계법령에 따라 또는 회사 정책에 따른 정보보유사유가 발생하여 보존할 필요가 있는 경우에는 필요한 기간동안 해당 판매자 정보를 보관합니다.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="popup_title03">3. 정보주체의 권리, 의무 및 그 행사방법에 관한 사항</div>
+                <div class="popup_txt">
+                    <p>
+                        가. 이용자 및 법정대리인은 등록되어 있는 이용자 본인의 개인정보와 관련하여, 언제든지 개인정보 열람/정정·삭제/처리정지/동의 철회를 요청할 수 있습니다.
+                    </p>
+                    <p>
+                        (요청: partner@denguru.kr)
+                    </p>
+                    <p>
+                        나. 개인정보의 오류에 대한 정정을 요청하신 경우 정정을 완료하기 전까지 해당 개인정보를 이용하지 않습니다.
+                    </p>
+                    <p>
+                        다. 회사는 다음에 해당하는 경우에는 개인정보의 전부 또는 일부에 대하여 열람/ 정정·삭제를 거절할 수 있습니다.
+                    </p>
+                    <p>
+                        - 법률에 따라 열람이 금지되거나 제한되는 경우
+                    </p>
+                    <p>
+                        - 다른 사람의 생명·신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우
+                    </p>
+                    <p>
+                        라. 이용자가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제3자에게 제공하지 않습니다.
+                    </p>
+                    <p>
+                        마. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하겠습니다.
+                    </p>
+                    <p>
+                        바. 이용자의 개인정보를 최신의 상태로 정확하게 입력하여 주시기 바랍니다. 이용자가 입력한 부정확한 정보로 인해 발생하는 사고의 책임은 이용자 자신에게 있습니다.
+                    </p>
+                    <p>
+                        사. 이용자는 개인정보를 보호 받을 권리와 함께 스스로를 보호하고 타인의 정보를 침해하지 않을 의무도 가지고 있습니다.
+                    </p>
+                    <p>
+                        이용자의 개인정보가 유출되지 않도록 조심하시고 타인의 개인정보를 훼손하지 않도록 유의해 주십시오.
+                    </p>
+                    <p>
+                        만약 이 같은 책임을 다하지 못하고 타인의 정보 및 존엄성을 훼손할 시에는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등에 의해 처벌 받을 수 있습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="popup_btn_box">
+                <button type="button" class="btn_close btn_main" onclick="closePopup('popupAgree')">닫 기</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        //textarea 사이즈 자동조절
+        function resizeTextarea(obj) {
+            obj.style.height = "1px";
+            obj.style.height = (8+obj.scrollHeight)+"px";
+        }
+        
+        $('.js-partners-file').each(function(){
+            $(this).on('change',function(){
+                var fileurl = $(this).val();
+                var filename = fileurl.substring(fileurl.lastIndexOf('\\')+1, fileurl.length);
+                var $boxFilename = $(this).prev('.js-filename');
+
+                $boxFilename.text(filename);
+            })
+        });
+        
+        var $btnSubmit = $('#btnSubmit');
+
+        var BTN_MAIN = 'btn_main';
+        var BTN_DISABLED = 'btn_disabled';
+        var BTN_NORMAL = 'btn_normal';
+
+        function handleBtnActive(){
+            $btnSubmit.removeClass(BTN_DISABLED);
+            $btnSubmit.removeClass(BTN_NORMAL);
+            $btnSubmit.addClass(BTN_MAIN);
+            $btnSubmit.attr('disabled',false);
+        }
+        function handleBtnDisabled(){
+            $btnSubmit.removeClass(BTN_MAIN);
+            $btnSubmit.addClass(BTN_DISABLED);
+            $btnSubmit.addClass(BTN_NORMAL);
+            $btnSubmit.attr('disabled',true);
+        }
+
+        // 폼 입력시 버튼 활성화, 비활성화
+        $('#partnersForm').on('change', function(){
+            var flag = false;
+
+            $('.js-inp-required').each(function(){
+                if(!jQuery.trim($(this).val())){
+                    flag = false;
+                    return false;
+                } else {
+                    flag = true;
+                }
+
+                if (!flag) return false;
+
+                if($('#agree').is(":checked")) {
+                    return flag;
+                } else {
+                    flag = false;
+                    return flag;
+                }
+
+            });
+
+            if(flag) {
+                handleBtnActive();
+            } else {
+                handleBtnDisabled();
+            }
+        });
+
+        // popup
+        function openPopup(el){
+            event.preventDefault();
+            $('#popupWrap').show();
+            $('#'+ el).show();
+        }
+        function closePopup(el){
+            event.preventDefault();
+            $('#popupWrap').hide();
+            $('#'+ el).hide();
+        }
+    </script>
+</body>
+</html>

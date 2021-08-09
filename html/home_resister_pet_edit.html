@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DENGURU :: 마이펫정보수정</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header03">
+            <h1 class="h_title">마이펫 정보수정</h1>
+            <div class="btn_box">
+                <a href="javascript:document.referrer? history.back() : location.href = 'index.html'" class="btn_goback btn_left">
+                    <img src="/images/icon-goback-white.svg" alt="" class="icon">
+                </a>
+            </div>
+        </header>
+        <div class="main">
+            <section class="resister_pet_form_wrap pd_header03">
+                <h2 class="blind">펫 정보수정 폼</h2>
+                <form onsubmit="return false;">
+                    <!-- 사진 + 이름 -->
+                    <div class="pet_profile01">
+                        <div class="profile_img has_img">
+                            <div class="img_box"><img src="/images/profile-img.jpg" alt="프로필이미지" class="img"></div>
+                            <div class="inp_profile_box inp_has_profile">
+                                <!-- <span class="lab"><img src="/images/icon-camera-white.svg" alt="카메라아이콘" class="icon"> 프로필이미지</span> -->
+                                <input type="file" name="petProfileImg" id="petProfileImg" hidden>
+                                <label for="petProfileImg" class="btn btn_linkstyle btn_change_img">
+                                    <!-- 사진변경하기<img src="/images/icon-angle-right-white.svg" alt=">" class="icon"> -->
+                                    <img src="/images/btn_set-img.png" alt="레오 정보 수정하기" class="img">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inp_box01">
+                            <div class="lab_box">
+                                <label for="petName" class="lab">이름</label>
+                                <span class="inp_noti">* 필수 입력창입니다.</span>
+                            </div>
+                            <input type="text" name="petName" id="petName" class="inp inp_txt" value="레오">
+                        </div>
+                    </div>
+                    <div class="pet_profile02">
+                        <div class="inp_box01">
+                            <div class="lab_box">
+                                <span class="lab">성별</span>
+                            </div>
+                            <div class="radio_container">
+                                <span class="radio_box">
+                                	<input type="radio" name="petGender" id="petBoy" hidden class="inp_radio" checked>
+                                	<label for="petBoy" class="lab_radio">남아</label>
+                                </span>
+                                <span class="radio_box">
+                                	<input type="radio" name="petGender" id="petGirl" hidden class="inp_radio">
+                                	<label for="petGirl" class="lab_radio">여아</label>
+                                </span>
+                            </div>
+                            <div class="inp_check_box">
+                                <input type="checkbox" name="petNeutralization" id="petNeutralization" hidden class="inp_check" checked>
+                                <label for="petNeutralization" class="lab_checkbox01">중성화한 경우 체크</label>
+                            </div>
+                        </div>
+                        <div class="inp_box01">
+                            <div class="lab_box">
+                                <span class="lab">생일</span>
+                                <span class="inp_noti">* 필수 입력창입니다.</span>
+                            </div>
+                            <div class="inp inp_date_box">
+                                <div class="inp_date">
+                                    <input type="number" name="petBirth" id="petBirthYear" class="inp_nostyle" placeholder="YYYY" value="2015"> 년
+                                </div>
+                                <div class="inp_date">
+                                    <input type="number" name="petBirth" id="petBirthMonth" class="inp_nostyle" placeholder="MM" value="9"> 월
+                                </div>
+                                <div class="inp_date">
+                                    <input type="number" name="petBirth" id="petBirthDate" class="inp_nostyle" placeholder="DD" value="18"> 일
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inp_box01">
+                            <div class="lab_box"><label for="petKg" class="lab">몸무게</label></div>
+                            <div class="inp_two_thirds">
+                                <input type="number" name="petKg" id="petKg" class="inp">kg
+                            </div>
+                        </div>
+                        <div class="inp_box01">
+                            <div class="lab_box"><span class="lab">체형</span></div>
+                            <div class="radio_container">
+                                <span class="radio_box">
+                                	<input type="radio" name="petBody" id="petBody01" hidden class="inp_radio">
+                                	<label for="petBody01" class="lab_radio">날씬해요</label>
+                                </span>
+                                <span class="radio_box">
+                                	<input type="radio" name="petBody" id="petBody02" hidden class="inp_radio" checked>
+                                	<label for="petBody02" class="lab_radio">딱좋아요</label>
+                                </span>
+                                <span class="radio_box">
+                                	<input type="radio" name="petBody" id="petBody03" hidden class="inp_radio">
+                                	<label for="petBody03" class="lab_radio">통통해요</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="inp_box01">
+                            <div class="lab_box"><span class="lab">품종</span></div>
+                            <input type="text" name="petBreedSearch" id="petBreedSearch" class="inp inp_search" placeholder="품종검색" value="포메라니안">
+                            <!-- <div class="breed_container swiper-container">
+                                <ul class="breed_list swiper-wrapper">
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">기타품종</div>
+                                                <div class="breed_en">All Dogs</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">골든 리트리버</div>
+                                                <div class="breed_en">Golden Retriever</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">닥스훈트</div>
+                                                <div class="breed_en">Dachshund</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">래브라도 리트리버</div>
+                                                <div class="breed_en">Labrador Retriever</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">몰티즈</div>
+                                                <div class="breed_en">Maltese</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">미니어처 슈나우저</div>
+                                                <div class="breed_en">Miniature Schnauzer</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">불도그</div>
+                                                <div class="breed_en">Bulldog</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">비숑 프리제</div>
+                                                <div class="breed_en">Bichon Frise</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">시베리안 허스키</div>
+                                                <div class="breed_en">Siberian Husky</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">시츄</div>
+                                                <div class="breed_en">Shih Tzu</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">요크셔 테리어</div>
+                                                <div class="breed_en">Yorkshire Terrier</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">웰시 코기</div>
+                                                <div class="breed_en">Welsh Corgi</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">진돗개</div>
+                                                <div class="breed_en">Jindo Dog</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">치와와</div>
+                                                <div class="breed_en">Chihuahua</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">코커 스패니얼</div>
+                                                <div class="breed_en">Cocker Spaniel</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">파피용</div>
+                                                <div class="breed_en">Papillon</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">페키니즈</div>
+                                                <div class="breed_en">Pekingese</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">포메라니안</div>
+                                                <div class="breed_en">Pomeranian</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">푸들</div>
+                                                <div class="breed_en">Poodle</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="breed_item swiper-slide">
+                                        <a href="">
+                                            <div class="img_box"><img src="http://placehold.it/126x126" alt="" class="img"></div>
+                                            <div class="txt_box">
+                                                <div class="breed_ko">프렌치 불도그</div>
+                                                <div class="breed_en">French Bulldog</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <div class="btn_more_box">
+                                <a href="" class="btn btn_linkstyle link_more">품종 목록에서 선택하기 <img src="/images/icon-angle-right.svg" alt=">" class="icon"></a>
+                            </div>
+                        </div>
+                        <div class="inp_box01">
+                            <div class="lab_box">
+                                <span class="lab">우리 아이 특징</span>
+                                <span class="inp_noti">* 특징키워드는 5개까지만 선택할 수 있습니다.</span>
+                            </div>
+                            <table class="check_box_table">
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature01" class="inp_check_table" hidden><label for="petFeature01" class="lab_check_table">뼈/관절강화</label></td>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature02" class="inp_check_table" hidden><label for="petFeature02" class="lab_check_table">면역력강화</label></td>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature03" class="inp_check_table" hidden><label for="petFeature03" class="lab_check_table">다이어트</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature04" class="inp_check_table" hidden><label for="petFeature04" class="lab_check_table">피부/털개선</label></td>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature05" class="inp_check_table" hidden><label for="petFeature05" class="lab_check_table">구강관리</label></td>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature06" class="inp_check_table" hidden><label for="petFeature06" class="lab_check_table">눈/귀 건강</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature07" class="inp_check_table" hidden><label for="petFeature07" class="lab_check_table">냄새관리</label></td>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature08" class="inp_check_table" hidden><label for="petFeature08" class="lab_check_table">해충방지</label></td>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature09" class="inp_check_table" hidden><label for="petFeature09" class="lab_check_table">신장/요로/결석</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature10" class="inp_check_table" hidden><label for="petFeature10" class="lab_check_table">임신/수유</label></td>
+                                        <td>
+                                            <!-- <input type="checkbox" name="petFeature" id="petFeature11" class="inp_check_table" hidden><label for="petFeature11" class="lab_check_table">해충방지</label> -->
+                                        </td>
+                                        <td>
+                                            <!-- <input type="checkbox" name="petFeature" id="petFeature12" class="inp_check_table" hidden><label for="petFeature12" class="lab_check_table">임신/수유</label> -->
+                                        </td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature13" class="inp_check_table" hidden><label for="petFeature13" class="lab_check_table">눈물개선</label></td>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature14" class="inp_check_table" hidden><label for="petFeature14" class="lab_check_table">결석예방</label></td>
+                                        <td><input type="checkbox" name="petFeature" id="petFeature15" class="inp_check_table" hidden><label for="petFeature15" class="lab_check_table">신장/요로</label></td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="inp_box01">
+                            <div class="lab_box"><span class="lab">식이 알레르기가 있나요?</span></div>
+                            <div class="radio_container">
+                                <span class="radio_box">
+                                	<input type="radio" name="petHasAllergy" id="petHasAllergy01" hidden class="inp_radio" checked>
+                                	<label for="petHasAllergy01" class="lab_radio lab_allergy">없어요</label>
+                                </span>
+                                <span class="radio_box">
+                                	<input type="radio" name="petHasAllergy" id="petHasAllergy02" hidden class="inp_radio">
+                                	<label for="petHasAllergy02" class="lab_radio lab_allergy">있어요</label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="allergy_container" id="allergyContainer">
+                            <div class="inp_box01">
+                                <div class="lab_box"><span class="lab_small">단백질원</span></div>
+                                <table class="check_box_table">
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein01" class="inp_check_table" hidden><label for="petAllergyProtein01" class="lab_check_table">닭</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein02" class="inp_check_table" hidden><label for="petAllergyProtein02" class="lab_check_table">오리</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein03" class="inp_check_table" hidden><label for="petAllergyProtein03" class="lab_check_table">소고기</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein04" class="inp_check_table" hidden><label for="petAllergyProtein04" class="lab_check_table">양고기</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein05" class="inp_check_table" hidden><label for="petAllergyProtein05" class="lab_check_table">돼지고기</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein06" class="inp_check_table" hidden><label for="petAllergyProtein06" class="lab_check_table">말고기</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein07" class="inp_check_table" hidden><label for="petAllergyProtein07" class="lab_check_table">캥거루/토끼</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein08" class="inp_check_table" hidden><label for="petAllergyProtein08" class="lab_check_table">염소/사슴</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein09" class="inp_check_table" hidden><label for="petAllergyProtein09" class="lab_check_table">연어</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein10" class="inp_check_table" hidden><label for="petAllergyProtein10" class="lab_check_table">참치/청어/상어</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein11" class="inp_check_table" hidden><label for="petAllergyProtein11" class="lab_check_table">멸치</label></td>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein12" class="inp_check_table" hidden><label for="petAllergyProtein12" class="lab_check_table">계란</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyProtein" id="petAllergyProtein13" class="inp_check_table" hidden><label for="petAllergyProtein13" class="lab_check_table">맥주효모</label></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="inp_box01">
+                                <div class="lab_box"><span class="lab_small">야채/과일/곡물</span></div>
+                                <table class="check_box_table">
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens01" class="inp_check_table" hidden><label for="petAllergyGreens01" class="lab_check_table">고구마</label></td>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens02" class="inp_check_table" hidden><label for="petAllergyGreens02" class="lab_check_table">단호박</label></td>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens03" class="inp_check_table" hidden><label for="petAllergyGreens03" class="lab_check_table">양배추</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens04" class="inp_check_table" hidden><label for="petAllergyGreens04" class="lab_check_table">브로콜리</label></td>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens05" class="inp_check_table" hidden><label for="petAllergyGreens05" class="lab_check_table">사과</label></td>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens06" class="inp_check_table" hidden><label for="petAllergyGreens06" class="lab_check_table">바나나</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens07" class="inp_check_table" hidden><label for="petAllergyGreens07" class="lab_check_table">베리류</label></td>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens08" class="inp_check_table" hidden><label for="petAllergyGreens08" class="lab_check_table">감자</label></td>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens09" class="inp_check_table" hidden><label for="petAllergyGreens09" class="lab_check_table">완두콩/땅콩</label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens10" class="inp_check_table" hidden><label for="petAllergyGreens10" class="lab_check_table">귀리/오트밀</label></td>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens11" class="inp_check_table" hidden><label for="petAllergyGreens11" class="lab_check_table">참깨/아마씨</label></td>
+                                            <td><input type="checkbox" name="petAllergyGreens" id="petAllergyGreens12" class="inp_check_table" hidden><label for="petAllergyGreens12" class="lab_check_table">쌀</label></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit_box">
+                        <div class="btn_box inp_box01">
+                            <div class="btn_left">
+                                <input type="checkbox" name="submitMainPg" id="submitMainPg" class="inp_check" hidden checked>
+                                <label for="submitMainPg" class="lab_checkbox02">이 아이로 첫화면 등록하기</label>
+                            </div>
+                            <button class="btn_linkstyle btn_right btn_trash" type="reset"><img src="/images/icon-trash.svg" alt="삭제하기" class="icon"></button>
+                        </div>
+                        <div class="">
+                            <button class="btn btn_full btn_main" type="button" id="btnSubmit" onclick="openPopup('submitMsg')">저장하기</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="popup_wrap">
+            <div class="popup_container popup_center" id="submitMsg">
+                <div class="popup_txt_box">
+                    <div class="popup_txt_main txt_center">ㅇㅇ 의 프로필이 등록되었어요</div>
+                    <div class="popup_txt_sub txt_center">다른아이도 더 등록하시겠어요?</div>
+                </div>
+                <div class="popup_btn_box">
+                    <button class="btn btn_full_popup btn_main" onclick="closePopup('submitMsg')">네 아직 더 있어요</button>
+                    <button class="btn btn_full_popup btn_normal_line" onclick="location.href='index.html'">끝! 아이가 더 생기면 올게요</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper('.breed_container', {
+            slidesPerView: 2.5,
+            spaceBetween: 8,
+        });
+
+        var elAllergyContainer = document.getElementById('allergyContainer');
+        var elAllergyLabAll = document.querySelectorAll('.lab_allergy');
+        var SHOW = 'show'
+
+        //?????????????
+        function toggleAllergyCotainer(el) {
+            var clickLabelFor = el.getAttribute('for');
+            
+            if(clickLabelFor === 'petHasAllergy02') {
+                elAllergyContainer.classList.add(SHOW);
+            } else if(clickLabelFor === 'petHasAllergy01') {
+                elAllergyContainer.classList.remove(SHOW);
+            }
+        }
+
+        elAllergyLabAll.forEach(function(el){
+            el.addEventListener('click', function(){
+                toggleAllergyCotainer(this);
+            });
+        })
+
+        var elPopupWrap = document.querySelector('.popup_wrap');
+        var SHOW = 'show';
+
+        function openPopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.add(SHOW);
+            elPopupContainer.classList.add(SHOW);
+        }
+        function closePopup(id){
+            var elPopupContainer = document.getElementById(id);
+
+            elPopupWrap.classList.remove(SHOW);
+            elPopupContainer.classList.remove(SHOW);
+        }
+    </script>
+</body>
+</html>
